@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* scroll-behavior: smooth; */
+    }
+    html,body{
+      scroll-behavior: smooth;
+    }
+    body {
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      
+      background-image: url(./img/647849d8943d677da211765db7a6ec0e.gif);
+      background-repeat: no-repeat;
+    
+     background-size: cover;
+        
+    }
+    .info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+     & img{
+      width: 50px;
+      margin-left: 20px;
+      object-fit: cover;
+     }
+     & p{
+      place-content: center;
+      margin-top: 15px;
+      font-family: Kh Ang PhkayProek;
+      font-size: 20px;
+     }
+      & a{
+        color: rgb(244, 45, 0);
+        text-decoration: none;
+      }
+
+
+   }
+    .text {
+     
+      background-color: rgba(231, 26, 26, 0.682);
+      width: 920px;
+      height: 150px;
+      
+      border-radius: 30px;
+      border: solid 3px rgb(228, 6, 6);
+      
+      margin-top: 20px;
+      & .pro {
+       place-content: center;
+      
+      padding-top: 35px;
+      
+       & a{
+        margin-left: 10px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-family: Kh Baphnom SnehRean;
+        
+       }
+      }
+    }
+    .box-form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        & .inner{
+            width: 800px;
+            height: 630px;
+             display: flex;
+             border-radius: 20px 50px;
+            background-color: rgba(255, 228, 196, 0.411);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            & .mypic{
+                width: 100%;
+                height: auto;
+               
+                 & img{
+                  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    width: 300px;
+                    height: 450px;
+                    object-fit: cover;
+                    margin-top: 80px;
+                    border-radius: 20px;
+                    margin-left: 45px;
+                 }
+            }
+            & .icon{
+                width: 100%;
+                height: 100%;
+                
+                & .innericon{
+                  width: 350px;
+                  height: 60px;
+                  display: flex;
+                  place-items: center;
+                  margin-top: 25px;
+                   background-color: rgba(113, 6, 6, 0.801);
+                  border-radius: 20px;
+                  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                  & img{
+                    width: 50px;
+                    padding-top: 3px;
+                    margin-left: 60px;
+                    object-fit: cover;
+
+                    
+                  }
+                   & p{
+                     margin-left: 40px;
+                     font-size: 30px;
+                     font-family: Cooper Black;
+                    }
+                    & a{
+                      text-decoration: none;
+                      color: white;
+                    }
+                    
+                }
+                
+               
+            }
+            
+                & .innericon1{
+                  width: 350px;
+                  height: 60px;
+                  display: flex;
+                  place-items: center;
+                  margin-top: 20px;
+                   background-color: rgba(113, 6, 6, 0.801);
+                  border-radius: 20px;
+                  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                  & img{
+                    width: 50px;
+                    padding-top: 3px;
+                    margin-left: 60px;
+                    object-fit: cover;
+
+                    
+                  }
+                   & p{
+                     margin-left: 40px;
+                     font-size: 30px;
+                      font-family: Cooper Black;
+                    }
+                    & a{
+                      text-decoration: none;
+                      color: white;
+                    }
+                    
+                }
+                 & .innericon2{
+                  width: 350px;
+                  height: 180px;
+                 
+                 
+                  margin-top: 20px;
+                  background-color: rgba(32, 0, 139, 0.59);
+                  border-radius: 20px;
+                  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                  & img{
+                    width: 50px;
+                    padding-top: 10px;
+                   
+                    object-fit: cover;
+
+                    
+                  }
+                   & p{
+                      font-family: Cooper Black;
+                     font-size: 20px;
+                    }
+                    & a{
+                      text-decoration: none;
+                      color: white;
+                    }
+                    
+                }
+                
+               
+            
+        }
+    }
+    #tele{
+      width: 100px;
+      margin-left: 35px;
+    }
+    #ttele{
+      margin-left: 13px;
+    }
+    #call{
+      width: 48px;
+    }
+    #ccall{
+      font-size: 25px;
+      color: white;
+      
+    }
+    .contact{
+      width: 100%;
+      height: 100%;
+      margin-top: 25px;
+      & p{
+        font-size: 35px;
+        font-family:  Khmer HUYSAVY R;
+        color: rgb(29, 91, 199);
+      }
+    }
+    .BAR{
+            width: 100%;
+           
+            font-size: 20px;
+            font-family: Kh Ang Samnadaichas;
+            color: white;
+            & marquee{
+              position: fixed;
+              bottom: 0;
+            }
+        }
+    
+</style>
+<body>
+   <div class="BAR">
+      <marquee bgcolor="red" 
+      onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">និស្សិតឈ្មោះ: លី សីហៈ ក្រុម SW34 ជំនាន់ទី 23 ឆ្នាំទី 1 ឆមាសទី 2 មុខវិជ្ជា WD I បង្រៀនដោយ លោកគ្រូ រី វិសាន  នៃ វិទ្យាស្ថានស៊ីតិក || Project Map</marquee>
+
+    </div>
+    </center>
+    
+      <div class="info">
+        
+
+         <a href="./home.html"><img id="home" src="./img/12249422.png" alt=""></a> 
+          <a href="./home.html"><p>ទំព័រដើម</p></a>
+         <a href=""><img id="ct" src="./img/3237155-200.png" alt=""></a> 
+          <a href=""><p>ទំនាក់ទំនង</p></a>
+      </div>
+    
+    <center>
+
+        <div class="text">
+          <div class="pro">
+            <center>
+    
+                <a href="./phnompenh.html">រាជធានីភ្នំពេញ</a>
+                <a href="./kampot.html">កំពត</a>
+                <a href="./kep.html">កែប</a>
+                <a href="./kampongchnang.html">កំពង់ឆ្នាំង</a>
+                <a href="./pursat.html">ពោធិ៍សាត់</a>
+                <a href="./battambong.html">បាត់ដំបង់</a>
+                <a href="./pailin.html">ប៉ៃលិន</a>
+                <a href="./banteay meanchey.html">បន្ទាយមានជ័យ</a>
+                <a href="./siemreap.html">សៀមរាប</a>
+                <a href="./kampong Thom.html">កំពង់ធំ</a>
+                <a href="./kampongcham.html">កំពង់ចាម</a>
+                <a href="./preyveng.html">ព្រៃវែង</a>
+                <a href="./svay rieng.html">ស្វាយរៀង</a>
+                <a href="./takeo.html">តាកែវ</a>
+                <a href="./kandal.html">កណ្តាល</a>
+                <a href="./kampongspeu.html">កំពង់ស្ពឺ</a>
+                <a href="./kratie.html">ក្រចេះ</a>
+                <a href="./stung treng.html">ស្ទឹងត្រែង</a>
+                <a href="./mondulkiri.html">មណ្ឌលគីរី</a>
+                <a href="./preah vihear.html">ព្រះវិហារ</a>
+                <a href="./ratanakiri.html">រតនៈគីរី</a>
+                <a href="./koh kong.html">កោះកុង</a>
+                <a href="./oddar meanchey.html">ឧត្តរមានជ័យ</a>
+                <a href="./tbong khmum.html">ត្បូងឃ្មុំ</a>
+                <a href="./sihanoukvill.html">ព្រះសីហនុ</a>
+                
+                
+            </center>
+          </div>
+          
+          
+        </div>
+    </center>
+    <center>
+      <div class="contact">
+        <p>ប្រសិនបើមានចម្ងល់អាចទំនាក់ទំនងមកកាន់ខ្ញុំបាន</p>
+
+      </div>
+    </center>
+    <div class="box-form">
+        <div class="inner">
+
+            <div class="mypic">
+              
+                <img src="./img/IMG_9260.jpg" alt="">
+            </div>
+            <div class="icon">
+              <div class="innericon">
+
+               <a href="https://www.facebook.com/share/1AyvCPmkSo/?mibextid=wwXIfr"> <img src="./img/fb.png" alt=""></a> 
+                <a href="https://www.facebook.com/share/1AyvCPmkSo/?mibextid=wwXIfr"><p>Seyhak Ly</p></a>
+              </div>
+              <div class="innericon1">
+
+               <a href="https://www.instagram.com/l_seyhak?igsh=MWs3ZHRiMzJlcWt0Mg%3D%3D&utm_source=qr"> <img src="./img/inst.png" alt=""></a> 
+                <a href="https://www.instagram.com/l_seyhak?igsh=MWs3ZHRiMzJlcWt0Mg%3D%3D&utm_source=qr"><p>L_seyhak</p></a>
+              </div>
+              <div class="innericon1">
+
+               <a href="https://t.me/wei_ly345"> <img id="tele" src="./img/tele.png" alt=""></a> 
+                <a href="https://t.me/wei_ly345"><p id="ttele">wei_ly345</p></a>
+              </div>
+              
+              <div class="innericon1">
+
+                <img id="call" src="./img/call.png" alt="">
+                <p id="ccall">0889251633</p>
+              </div>
+              <div class="innericon1">
+
+               <a href="https://www.tiktok.com/@sey.hakly0?_t=ZS-8yyOckNX2Bk&_r=1"> <img id="tele" src="./img/tiktok.png" alt=""></a> 
+                <a href="https://www.tiktok.com/@sey.hakly0?_t=ZS-8yyOckNX2Bk&_r=1"><p id="ttele">Fenglii</p></a>
+              </div>
+              <div class="innericon2">
+                <center>
+
+                  <a href="https://maps.app.goo.gl/voMmLpGGyBMHurHp7"> <img  src="./img/address.png" alt=""></a> 
+                   <a href="https://maps.app.goo.gl/voMmLpGGyBMHurHp7"><p >My Address</p></a>
+                   <a href="https://maps.app.goo.gl/voMmLpGGyBMHurHp7">
+
+                     <span style="color: rgb(219, 214, 225);"><p>No.325,Street 217,Stueng Meanchey</p></span>
+                     <p style="color: rgb(219, 214, 225);">Phnom Penh City</p>
+                   </a>
+                </center>
+              </div>
+        </div>
+    </div>
+   
+    
+</body>
+</html>

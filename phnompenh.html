@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phnompenh</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* scroll-behavior: smooth; */
+    }
+    html,body{
+      scroll-behavior: smooth;
+    }
+    body {
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      
+      background-image: url(./img/blurp.jpg);
+    
+     background-size: contain;
+        
+    }
+    .info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+     & img{
+      width: 50px;
+      margin-left: 20px;
+      object-fit: cover;
+     }
+     & p{
+      place-content: center;
+      margin-top: 15px;
+      font-family: Kh Ang PhkayProek;
+      font-size: 20px;
+     }
+      & a{
+        color: bisque;
+        text-decoration: none;
+      }
+
+
+   }
+   .text {
+     
+      background-color: rgba(255, 255, 255, 0.245);
+      width: 920px;
+      height: 150px;
+      
+      border-radius: 30px;
+      border: solid 3px rgb(228, 6, 6);
+      
+      margin-top: 20px;
+      & .pro {
+       place-content: center;
+      
+      padding-top: 35px;
+      
+       & a{
+        margin-left: 10px;
+        color: rgb(23, 37, 167);
+        font-size: 20px;
+        font-family: Kh Baphnom SnehRean;
+        
+       }
+      }
+    }
+     .BAR{
+            width: 100%;
+           
+            font-size: 20px;
+            font-family: Kh Ang Samnadaichas;
+            color: white;
+            & marquee{
+              position: fixed;
+              bottom: 0;
+            }
+        }
+    .welcome{
+        width: 100%;
+        height: 500px;
+        
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        place-items: center;
+            & p{
+                font-size: 65px;
+                font-family: Khmer HUYSAVY R;
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
+       
+         & .namepro{
+            width: auto;
+            height: auto;
+            
+        }
+        & img{
+           width: 450px;
+           height: 450px;
+           object-fit: cover;
+           margin-left: 20%;
+           border-radius: 20px 50px;
+           border: solid 2px white;
+           box-shadow: rgba(204, 198, 198, 0.25) 0px 14px 28px, rgba(228, 221, 221, 0.22) 0px 10px 10px;
+        }
+    }
+    .indro{
+        width: auto;
+        height: auto;
+        
+        & p{
+            width: 800px;
+            place-content: center;
+            border-radius: 50px 50px 0px 0px;
+            height: 100px;
+            background-color: rgb(70, 15, 5);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:AKbalthom Kbach ;
+            box-shadow: rgba(230, 225, 225, 0.19) 0px 10px 20px, rgba(234, 232, 232, 0.23) 0px 6px 6px;
+        }
+    }
+    .info1{
+        width: auto;
+        height: auto;
+           
+        
+        & .list{
+            width: 800px;
+            
+           
+            height: 550px;
+            background-color: rgba(137, 43, 226, 0.37);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:Kh OreangOv Thmey;
+             border-radius: 0px 0px 50px 50px;
+             box-shadow: rgba(239, 234, 234, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+             & a{
+                color: beige;
+                text-decoration: none;
+             }
+        }
+    }
+    .explain{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(250, 235, 215, 0.384);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex2{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                        
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-right: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex1{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(212, 140, 16);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+     .explain1{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex1{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.312);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex22{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                        
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-left: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex12{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(223, 15, 15);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+    .top{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      & img{
+        width: 70px;
+        margin-bottom: 30px;
+      }
+    }
+</style>
+<body>
+    <div class="top">
+     <a href="#"><img src="./img/top.png" alt="">
+    </div>
+     <div class="BAR">
+      <marquee bgcolor="red" 
+      onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">និស្សិតឈ្មោះ: លី សីហៈ ក្រុម SW34 ជំនាន់ទី 23 ឆ្នាំទី 1 ឆមាសទី 2 មុខវិជ្ជា WD I បង្រៀនដោយ លោកគ្រូ រី វិសាន  នៃ វិទ្យាស្ថានស៊ីតិក || Project Map</marquee>
+
+    </div>
+     </center>
+    
+      <div class="info">
+        
+
+         <a href="./home.html"><img id="home" src="./img/12249422.png" alt=""></a> 
+          <a href="./home.html"><p>ទំព័រដើម</p></a>
+         <a href="./contact.html"><img id="ct" src="./img/3237155-200.png" alt=""></a> 
+          <a href="./contact.html"><p>ទំនាក់ទំនង</p></a>
+      </div>
+    
+    <center>
+
+        <div class="text">
+          <div class="pro">
+            <center>
+    
+                 <a href="./phnompenh.html">រាជធានីភ្នំពេញ</a>
+                <a href="./kampot.html">កំពត</a>
+                <a href="./kep.html">កែប</a>
+                <a href="./kampongchnang.html">កំពង់ឆ្នាំង</a>
+                <a href="./pursat.html">ពោធិ៍សាត់</a>
+                <a href="./battambong.html">បាត់ដំបង់</a>
+                <a href="./pailin.html">ប៉ៃលិន</a>
+                <a href="./banteay meanchey.html">បន្ទាយមានជ័យ</a>
+                <a href="./siemreap.html">សៀមរាប</a>
+                <a href="./kampong Thom.html">កំពង់ធំ</a>
+                <a href="./kampongcham.html">កំពង់ចាម</a>
+                <a href="./preyveng.html">ព្រៃវែង</a>
+                <a href="./svay rieng.html">ស្វាយរៀង</a>
+                <a href="./takeo.html">តាកែវ</a>
+                <a href="./kandal.html">កណ្តាល</a>
+                <a href="./kampongspeu.html">កំពង់ស្ពឺ</a>
+                <a href="./kratie.html">ក្រចេះ</a>
+                <a href="./stung treng.html">ស្ទឹងត្រែង</a>
+                <a href="./mondulkiri.html">មណ្ឌលគីរី</a>
+                <a href="./preah vihear.html">ព្រះវិហារ</a>
+                <a href="./ratanakiri.html">រតនៈគីរី</a>
+                <a href="./koh kong.html">កោះកុង</a>
+                <a href="./oddar meanchey.html">ឧត្តរមានជ័យ</a>
+                <a href="./tbong khmum.html">ត្បូងឃ្មុំ</a>
+                <a href="./sihanoukvill.html">ព្រះសីហនុ</a>
+                
+                
+            </center>
+          </div>
+          
+          
+        </div>
+    </center>
+    
+
+        <div class="welcome">
+            <p>សូមស្វាគមន៍មកកកាន់<br>រាជធានីភ្នំពេញ</p>
+            <div class="nampro">
+                
+                <img src="./img/phnompenh.jpg" alt="">
+            </div>
+        </div>
+        <center>
+            <div class="indro">
+                <p>ខាងក្រោមនេះអ្នកនឹងអាចយល់ដឹងអំពីព័ត៌មានក្នុងរាជធានីភ្នំពេញ</p>
+            </div>
+        </center>
+        <center>
+
+            <div class="info1">
+                 
+               <div class="list">
+                    <span style="font-family: Khmer HUYSAVY R;color: white;"><p id="meteka" ><u>មាតិការ</u></p></span>
+                    <a href="#a"><p>១.ប្រវតិ្តរាជធានីភ្នំពេញ..................................................................................។</p></a>
+                    <a href="#b"><p>២.ទីតាំងភូមិសាស្ត្រ.........................................................................................។</p></a>
+                    <a href="#c"><p>៣.ប្រជាជន និងវប្បធម៌..................................................................................។</p></a>
+                    <a href="#d"><p>៤.ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ................................................................។</p></a>
+                    <a href="#e"><p>៥.ការអប់រំ និងស្ថាប័នសិក្សា...........................................................................។</p></a>
+                    <a href="#f"><p>៦.សេដ្ឋកិច្ច........................................................................................................។</p></a>
+                    <a href="#g"><p>៧.ទេសចរណ៍...................................................................................................។</p></a>
+                    <a href="#h"><p>៨.ការអភិវឌ្ឍនាអនាគត..................................................................................។</p></a>
+               </div>
+                
+            </div>
+            
+        </center>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="a">ប្រវតិ្តរាជធានីភ្នំពេញ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/histpp.jpg" alt="">
+                    <span><p align="justify">រាជធានី ភ្នំពេញ មានប្រវត្តិចាប់តាំងពីសតវត្សទី 15 នៅពេលដែលស្ត្រីម្នាក់ឈ្មោះ ព្រះឧណ្ណាល័យ (ព្រះមេដាយព Penh) បានសាងសង់វត្តលើភ្នំតូចមួយ ហើយរកឃើញព្រះបដិមាពីរព្រះ។ ភ្នំនោះបានក្លាយជា “វត្តភ្នំ” ដែលជាមូលហេតុឈ្មោះ “ភ្នំពេញ”។ ក្រោយមកក្នុងឆ្នាំ 1434 ព្រះបាទព្រាជាអង្គវរ្ម័ន បានផ្លាស់រាជធានីមកទីនេះ។ ភ្នំពេញក្លាយជាមជ្ឈមណ្ឌលនយោបាយ សេដ្ឋកិច្ច និងវប្បធម៌របស់ប្រទេសកម្ពុជា។ ក្នុងសម័យអាណានិគមបារាំង ភ្នំពេញត្រូវបានអភិវឌ្ឍឲ្យមានផ្លូវ អគារ និងទីផ្សារទំនើប ប្រៀបបានជាទីក្រុងស្អាតបំផុតមួយនៅអាស៊ីអាគ្នេយ៍។ បច្ចុប្បន្ន ភ្នំពេញជាមូលដ្ឋាននយោបាយ និងសេដ្ឋកិច្ចធំជាងគេបង្អស់ក្នុងប្រទេស។</p></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="b">ទីតាំងភូមិសាស្ត្រ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">រាជធានី ភ្នំពេញ ស្ថិតនៅភាគកណ្ដាលនៃប្រទេសកម្ពុជា ដោយមានផ្ទៃក្រឡាប្រមាណ ៦៧៨.៤៦ គីឡូម៉ែត្រការ៉េ។ ទីក្រុងនេះស្ថិតនៅកន្លែងជួបជុំរវាងទន្លេបីគឺ ទន្លេមេគង្គ, ទន្លេបាសាក និងទន្លេសាប ដែលជាតំបន់មានសារៈសំខាន់ផ្នែកសេដ្ឋកិច្ច និងដឹកជញ្ជូន។ ភ្នំពេញមានព្រំប្រទល់ជាមួយខេត្តកណ្ដាលគ្រប់ទិសទាំងបួន។ ភូមិសាស្ត្រនៃទីក្រុងភាគច្រើនជាវាលទាប មានបាតទឹកល្អសម្រាប់កសិកម្ម និងមានតំបន់កណ្តាលជាទីក្រុងអភិវឌ្ឍសេដ្ឋកិច្ច។ ទីតាំងនេះបានធ្វើឲ្យភ្នំពេញក្លាយជាមជ្ឈមណ្ឌលនយោបាយ សេដ្ឋកិច្ច និងទេសចរណ៍សំខាន់បំផុតនៃប្រទេសកម្ពុជា។</p></span>
+                    <img src="./img/mappp.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="c">ប្រជាជន និងវប្បធម៌</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/pppp.gif" alt="">
+                    <span><p align="justify">រាជធានី ភ្នំពេញ មានប្រជាជនច្រើនជាង ២លាននាក់ ដែលភាគច្រើនជាជនជាតិខ្មែរ និងជាពុទ្ធសាសនិក។ ក្រៅពីនេះ ក៏មានជនជាតិភាគតិចដូចជា ចិន វៀតណាម និងជនបរទេសផ្សេងៗដែលរស់នៅ និងធ្វើអាជីវកម្ម។ ជីវភាពរបស់ប្រជាជនមានលក្ខណៈចម្រុះ ពីការរស់នៅជាមនុស្សជនបទដែលចូលមករកការងារនៅទីក្រុង ដល់ជីវភាពទំនើបក្នុងសង្គមទីក្រុង។ វប្បធម៌ភ្នំពេញជាការលាយបញ្ចូលគ្នារវាងប្រពៃណីខ្មែរបុរាណ ដូចជា ពិធីបុណ្យចូលឆ្នាំខ្មែរ បុណ្យអុំទូក និងរបាំប្រពៃណី ជាមួយនឹងឥទ្ធិពលបរទេស និងវប្បធម៌សកល។ ភ្នំពេញក្លាយជាទីក្រុងដែលបន្តរក្សាតម្លៃបុរាណខ្មែរ ខណៈពេលកំពុងអភិវឌ្ឍទៅជាទីក្រុងសកល។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="d">ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/arch.jpg" alt="">
+                    <span><p align="justify">ភ្នំពេញមានស្ថាបត្យកម្មអស្ចារ្យ ដែលសម្រស់ចម្រុះពីបុរាណទៅទំនើប។ វត្ត និងប្រាសាទដូចជា ព្រះបរមរាជវាំង និង វត្តភ្នំ បង្ហាញពីសិល្បៈខ្មែរ និងប្រពៃណីបុរាណ។ ក្នុងសម័យអាណានិគមបារាំង អគារបែបអ៊ឺរ៉ុប តូចធំ ចំណាត់ថ្នាក់ផ្លូវ និងផ្សារ សាងសង់ឡើងជាទីក្រុងស្អាត និងទំនើប។ ការរីកចម្រើននៃទីក្រុងក៏បង្កើតអគារទំនើប និងសេវាកម្មទំនើប ដូចជា អគារសម្រាប់អាជីវកម្ម ហាងស្កុត និងសណ្ឋាគារ។ ទីក្រុងភ្នំពេញកំពុងផ្ទុកសម្រស់ប្រពៃណី និងភាពទំនើបក្នុងពេលតែមួយ, បង្ហាញពីសមិទ្ធផលនៃការអភិវឌ្ឍប្រពៃណី និងសេដ្ឋកិច្ច។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="e">ការអប់រំ និងស្ថាប័នសិក្សា</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">រាជធានី ភ្នំពេញ ជាមជ្ឈមណ្ឌលអប់រំសំខាន់បំផុតក្នុងប្រទេសកម្ពុជា។ នៅទីនេះមានសាកលវិទ្យាល័យ និងវិទ្យាស្ថានជាច្រើន ដូចជា សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ និង សាកលវិទ្យាល័យភូមិន្ទសាធារណៈ។ ក៏មានសាលាបឋមសិក្សា សាលាមធ្យមសិក្សា និងវិទ្យាល័យសម្រាប់យុវជនជាច្រើនផងដែរ។ មជ្ឈមណ្ឌលបណ្តុះបណ្តាលវិជ្ជាជីវៈ និងវិទ្យាស្ថានឯកជនក៏មានភាពសកម្ម ដើម្បីផ្តល់ឱកាសសិក្សា និងជំនាញវិជ្ជាជីវៈទាន់សម័យ។ ការអប់រំក្នុងភ្នំពេញមិនត្រឹមតែផ្តល់ចំណេះដឹងទេ ប៉ុន្តែជួយបង្កើតជំនាញ និងភាពប្រកបដោយវិជ្ជាជីវៈសម្រាប់យុវជនក្នុងសង្គមសកល។</p></span>
+                    <img src="./img/stpp.jpeg" alt="">
+                </div>
+
+            </div>
+         </div>
+           <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="f">សេដ្ឋកិច្ច</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">រាជធានី ភ្នំពេញ គឺជាមជ្ឈមណ្ឌលសេដ្ឋកិច្ចធំជាងគេក្នុងប្រទេសកម្ពុជា។ ទីក្រុងនេះផ្តោតលើឧស្សាហកម្មសេវាកម្ម ពាណិជ្ជកម្ម និងសំណង់អគារទំនើប។ ផ្នែកសេដ្ឋកិច្ចផ្សេងទៀតរួមមាន អាជីវកម្មតូចៗ ហាងអ៊ីនធើណិត និងទីផ្សារផលិតផលស្រូវ និងផលិតផលកសិកម្មពីជុំវិញប្រទេស។ ការវិនិយោគពីបរទេសក៏ចូលរួមជំរុញការរីកចម្រើនទាំងផ្នែកបណ្តុះបណ្តាល វិស័យសេវាកម្ម និងទីផ្សារប្រកួតប្រជែង។ អគារពាណិជ្ជកម្ម និងមជ្ឈមណ្ឌលហិរញ្ញវត្ថុច្រើនបានកើតឡើងនៅក្នុងទីក្រុង ដើម្បីគាំទ្រការអភិវឌ្ឍសេដ្ឋកិច្ចសកល និងការងារអាជីវកម្ម។</p></span>
+                    <img src="./img/ecopp.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+          <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="g">ទេសចរណ៍</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/tpp.jpg" alt="">
+                    <span><p align="justify">រាជធានី ភ្នំពេញ ជាគោលដៅទេសចរណ៍ដ៏សំខាន់ ដែលទាក់ទាញទាំងភ្ញៀវក្នុង និងក្រៅប្រទេស។ ទីក្រុងនេះមានស្ថាបត្យកម្ម និងទីកន្លែងប្រវត្តិសាស្ត្រជាច្រើន ដូចជា ព្រះបរមរាជវាំង, វត្តភ្នំ, សារមន្ទីរទួលស្លែង និង ផ្សារធំ។ បូករួមជាមួយទេសភាពទន្លេ មេគង្គ, ទន្លេបាសាក់ និង ទន្លេច្រាចាំងវ៉ា ដែលបង្កើតឲ្យទីក្រុងមានសោភ័ណភាពពិសេស។ ភ្នំពេញក៏ជាមជ្ឈមណ្ឌលវប្បធម៌ ដែលមានពិធីបុណ្យប្រពៃណីជាច្រើន ដូចជា បុណ្យអុំទូក និងបុណ្យចូលឆ្នាំខ្មែរ។ លើសពីនេះ មានសណ្ឋាគារ មជ្ឈមណ្ឌលទំនើប និងភោជនីយដ្ឋានខ្មែរ-អន្តរជាតិ ដែលធ្វើឲ្យភ្នំពេញក្លាយជាទីក្រុងទេសចរណ៍មានភាពទំនើប និងចម្រុះ។</p></span>
+                </div>
+
+            </div>
+        </div>
+          <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="h">ការអភិវឌ្ឍនាអនាគត</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">រាជធានី ភ្នំពេញ កំពុងស្ថិតក្នុងដំណាក់កាលអភិវឌ្ឍយ៉ាងលឿន ដើម្បីក្លាយជាទីក្រុងសម័យទំនើប និងប្រកួតប្រជែងជាមួយតំបន់អាស៊ីអាគ្នេយ៍។ គម្រោងអភិវឌ្ឍន៍រួមមាន ការសាងសង់អគារលំនៅដ្ឋានខ្ពស់ៗ, មជ្ឈមណ្ឌលពាណិជ្ជកម្មទំនើប, ផ្លូវល្បឿនលឿន និងប្រព័ន្ធដឹកជញ្ជូនសាធារណៈ។ រដ្ឋាភិបាលក៏ផ្តោតលើការគ្រប់គ្រងសណ្តាប់ធ្នាប់ទីក្រុង ការអភិវឌ្ឍបៃតង និងការពារបរិស្ថាន។ លើសពីនេះ ការវិនិយោគបរទេស និងការចូលរួមរបស់ឯកជនកំពុងជំរុញឱ្យទីក្រុងមានភាពទំនើបខ្ពស់។ ទិសដៅអនាគតនៃភ្នំពេញគឺក្លាយជាមជ្ឈមណ្ឌលសេដ្ឋកិច្ច ទេសចរណ៍ និងវប្បធម៌សកល។</p></span>
+                    <img src="./img/dpp.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+
+        
+</body>
+</html>

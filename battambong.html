@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>battambong</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* scroll-behavior: smooth; */
+    }
+    html,body{
+      scroll-behavior: smooth;
+    }
+    body {
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      
+      background-image: url(./img/—Pngtree—kbach\ khmer-pattern\ cambodia_1293616.jpg);
+      background-repeat: no-repeat;
+    
+     background-size: cover;
+        
+    }
+    .info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+     & img{
+      width: 50px;
+      margin-left: 20px;
+      object-fit: cover;
+     }
+     & p{
+      place-content: center;
+      margin-top: 15px;
+      font-family: Kh Ang PhkayProek;
+      font-size: 20px;
+     }
+      & a{
+        color: bisque;
+        text-decoration: none;
+      }
+
+
+   }
+   .text {
+     
+      background-color: rgba(255, 255, 255, 0.245);
+      width: 920px;
+      height: 150px;
+      
+      border-radius: 30px;
+      border: solid 3px rgb(228, 6, 6);
+      
+      margin-top: 20px;
+      & .pro {
+       place-content: center;
+      
+      padding-top: 35px;
+      
+       & a{
+        margin-left: 10px;
+        color: rgb(16, 4, 4);
+        font-size: 20px;
+        font-family: Kh Baphnom SnehRean;
+        
+       }
+      }
+    }
+     .BAR{
+            width: 100%;
+           
+            font-size: 20px;
+            font-family: Kh Ang Samnadaichas;
+            color: white;
+            & marquee{
+              position: fixed;
+              bottom: 0;
+            }
+        }
+    .welcome{
+        width: 100%;
+        height: 500px;
+        
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        place-items: center;
+            & p{
+                text-align: center;
+                font-size: 65px;
+                font-family: Khmer HUYSAVY R;
+                color: rgb(36, 77, 189);
+            }
+       
+         & .namepro{
+            width: auto;
+            height: auto;
+            
+        }
+        & img{
+           width: 450px;
+           height: 450px;
+           object-fit: cover;
+           margin-left: 20%;
+           border-radius: 20px 50px;
+           border: solid 2px white;
+           box-shadow: rgba(204, 198, 198, 0.25) 0px 14px 28px, rgba(228, 221, 221, 0.22) 0px 10px 10px;
+        }
+    }
+    .indro{
+        width: auto;
+        height: auto;
+        
+        & p{
+            width: 800px;
+            place-content: center;
+            border-radius: 50px 50px 0px 0px;
+            height: 100px;
+            background-color: rgb(70, 15, 5);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:AKbalthom Kbach ;
+            box-shadow: rgba(230, 225, 225, 0.19) 0px 10px 20px, rgba(234, 232, 232, 0.23) 0px 6px 6px;
+        }
+    }
+    .info1{
+        width: auto;
+        height: auto;
+           
+        
+        & .list{
+            width: 800px;
+            
+           
+            height: 550px;
+            background-color: rgba(137, 43, 226, 0.37);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:Kh OreangOv Thmey;
+             border-radius: 0px 0px 50px 50px;
+             box-shadow: rgba(239, 234, 234, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+             & a{
+                color: beige;
+                text-decoration: none;
+             }
+        }
+    }
+    .explain{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(250, 235, 215, 0.384);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex2{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                        
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-right: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex1{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(212, 140, 16);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+     .explain1{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex1{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.312);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex22{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                       
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-left: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex12{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(223, 15, 15);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+    .top{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      & img{
+        width: 70px;
+        margin-bottom: 30px;
+      }
+    }
+</style>
+<body>
+    <div class="top">
+     <a href="#"><img src="./img/top.png" alt="">
+    </div>
+     <div class="BAR">
+      <marquee bgcolor="red" 
+      onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">និស្សិតឈ្មោះ: លី សីហៈ ក្រុម SW34 ជំនាន់ទី 23 ឆ្នាំទី 1 ឆមាសទី 2 មុខវិជ្ជា WD I បង្រៀនដោយ លោកគ្រូ រី វិសាន  នៃ វិទ្យាស្ថានស៊ីតិក || Project Map</marquee>
+
+    </div>
+     </center>
+    
+      <div class="info">
+        
+
+         <a href="./home.html"><img id="home" src="./img/12249422.png" alt=""></a> 
+          <a href="./home.html"><p>ទំព័រដើម</p></a>
+         <a href="./contact.html"><img id="ct" src="./img/3237155-200.png" alt=""></a> 
+          <a href="./contact.html"><p>ទំនាក់ទំនង</p></a>
+      </div>
+    
+    <center>
+
+        <div class="text">
+          <div class="pro">
+            <center>
+                <a href="./phnompenh.html">រាជធានីភ្នំពេញ</a>
+                <a href="./kampot.html">កំពត</a>
+                <a href="./kep.html">កែប</a>
+                <a href="./kampongchnang.html">កំពង់ឆ្នាំង</a>
+                <a href="./pursat.html">ពោធិ៍សាត់</a>
+                <a href="./battambong.html">បាត់ដំបង់</a>
+                <a href="./pailin.html">ប៉ៃលិន</a>
+                <a href="./banteay meanchey.html">បន្ទាយមានជ័យ</a>
+                <a href="./siemreap.html">សៀមរាប</a>
+                <a href="./kampong Thom.html">កំពង់ធំ</a>
+                <a href="./kampongcham.html">កំពង់ចាម</a>
+                <a href="./preyveng.html">ព្រៃវែង</a>
+                <a href="./svay rieng.html">ស្វាយរៀង</a>
+                <a href="./takeo.html">តាកែវ</a>
+                <a href="./kandal.html">កណ្តាល</a>
+                <a href="./kampongspeu.html">កំពង់ស្ពឺ</a>
+                <a href="./kratie.html">ក្រចេះ</a>
+                <a href="./stung treng.html">ស្ទឹងត្រែង</a>
+                <a href="./mondulkiri.html">មណ្ឌលគីរី</a>
+                <a href="./preah vihear.html">ព្រះវិហារ</a>
+                <a href="./ratanakiri.html">រតនៈគីរី</a>
+                <a href="./koh kong.html">កោះកុង</a>
+                <a href="./oddar meanchey.html">ឧត្តរមានជ័យ</a>
+                <a href="./tbong khmum.html">ត្បូងឃ្មុំ</a>
+                <a href="./sihanoukvill.html">ព្រះសីហនុ</a>
+            </center>
+          </div>
+          
+          
+        </div>
+    </center>
+    
+
+        <div class="welcome">
+            <p>សូមស្វាគមន៍មកកកាន់<br>ខេត្តបាត់ដំបង់</p>
+            <div class="nampro">
+                
+                <img src="./img/Battambang-768x512.jpg" alt="">
+            </div>
+        </div>
+        <center>
+            <div class="indro">
+                <p>ខាងក្រោមនេះអ្នកនឹងអាចយល់ដឹងអំពីព័ត៌មានក្នុងខេត្តបាត់ដំបង់</p>
+            </div>
+        </center>
+        <center>
+
+            <div class="info1">
+                 
+               <div class="list">
+                    <span style="font-family: Khmer HUYSAVY R;color: white;"><p id="meteka" ><u>មាតិការ</u></p></span>
+                    <a href="#a"><p>១.ប្រវតិ្តខេត្តបាត់ដំបង់....................................................................................។</p></a>
+                    <a href="#b"><p>២.ទីតាំងភូមិសាស្ត្រ.........................................................................................។</p></a>
+                    <a href="#c"><p>៣.ប្រជាជន និងវប្បធម៌..................................................................................។</p></a>
+                    <a href="#d"><p>៤.ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ................................................................។</p></a>
+                    <a href="#e"><p>៥.ការអប់រំ និងស្ថាប័នសិក្សា...........................................................................។</p></a>
+                    <a href="#f"><p>៦.សេដ្ឋកិច្ច........................................................................................................។</p></a>
+                    <a href="#g"><p>៧.ទេសចរណ៍...................................................................................................។</p></a>
+                    <a href="#h"><p>៨.ការអភិវឌ្ឍនាអនាគត..................................................................................។</p></a>
+               </div>
+                
+            </div>
+            
+        </center>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="a">ប្រវតិ្តខេត្តបាត់ដំបង់</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/hbtt.jpg" alt="">
+                    <span><p align="justify">
+
+ខេត្តបាត់ដំបង ស្ថិតនៅភាគខាងលិចនៃប្រទេសកម្ពុជា។
+ឈ្មោះ “បាត់ដំបង” មានន័យថា បាត់ = បាត់បង់, ដំបង = ដើមឈើ ឬដំបង។
+តំបន់នេះជាផ្នែកមួយនៃអាណាចក្រខ្មែរ មានស្រែទំនាប និងទន្លេសាបសម្រាប់កសិកម្ម។
+សម័យបារាំង បានរៀបចំជាខេត្តរដ្ឋបាល និងអភិវឌ្ឍផ្លូវ និងអាគារ។
+នៅសម័យបច្ចុប្បន្ន ខេត្តបាត់ដំបងមានកសិកម្ម ទេសចរណ៍ និងអភិវឌ្ឍសេដ្ឋកិច្ច។
+</p></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="b">ទីតាំងភូមិសាស្ត្រ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្តបាត់ដំបងស្ថិតនៅភាគខាងលិចនៃប្រទេសកម្ពុជា។
+មានព្រំប្រទល់ជាមួយខេត្តសៀមរាប ក្រចេះ ខេត្តកណ្ដាល និងតំបន់ព្រំប្រទល់ប្រទេសថៃ។
+ភាគច្រើនជាទំនាប មានទន្លេសាប និងទឹកស្អាតសម្រាប់កសិកម្ម និងនេសាទ។
+មានព្រៃភ្នំ និងទេសភាពធម្មជាតិ ដែលសាកសមសម្រាប់ទេសចរណ៍។
+ទីតាំងនេះជាកន្លែងសំខាន់ក្នុងការភ្ជាប់សេដ្ឋកិច្ច និងដឹកជញ្ជូនក្នុងតំបន់។</p></span>
+                    <img src="./img/mapbtt.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="c">ប្រជាជន និងវប្បធម៌</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/ppbtt.jpg" alt="">
+                    <span><p align="justify">ប្រជាជនភាគច្រើនជាជនជាតិខ្មែរ ដែលប្រកបដោយជីវភាពសាមញ្ញ និងកសិកម្ម។
+មានជនជាតិវៀតណាម និងចិនរស់នៅតាមទីផ្សារ និងតំបន់ពាណិជ្ជកម្ម។
+វប្បធម៌មានប្រពៃណីខ្មែរ ត្រូវបានថែរក្សាដោយពិធីបុណ្យប្រពៃណី និងអរិយធម៌សាសនា។
+បុណ្យសំខាន់ៗរួមមាន បុណ្យចូលឆ្នាំខ្មែរ បុណ្យភ្ជុំបិណ្ឌ និងបុណ្យកាតិន។
+សិល្បៈប្រជាប្រិយដូចជា រាំ ប្រដាល់ និងចម្រៀង បន្តអត្តសញ្ញាណវប្បធម៌ខ្មែរ។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="d">ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/archbtt.avif" alt="">
+                    <span><p align="justify">ខេត្តបាត់ដំបងមានស្ថាបត្យកម្មចម្រុះ រួមមានប្រាសាទបុរាណ និងវត្តអារាម។ប្រាសាទបង្ហាញពីសិល្បៈអង្គរ និងប្រវត្តិសាស្រ្តខ្មែរ។វត្តអារាមជាកន្លែងធ្វើសាសនា និងថែរក្សាវប្បធម៌ប្រពៃណី។មានសំណង់រដ្ឋបាល ទីផ្សារទំនើប និងផ្លូវសាធារណៈ អភិវឌ្ឍសង្គមសេដ្ឋកិច្ច។សំណង់ទាំងនេះបង្ហាញពីការរួមបញ្ចូលរវាងបុរាណ និងសម័យទំនើប។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="e">ការអប់រំ និងស្ថាប័នសិក្សា</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត បាត់ដំបង មានប្រព័ន្ធអប់រំចាប់ពីកម្រិតបឋមសិក្សា រហូតដល់វិទ្យាល័យ និងមជ្ឈមណ្ឌលបណ្តុះបណ្តាលវិជ្ជាជីវៈ។ នៅទីនេះមានសាលារៀនសាធារណៈ និងឯកជនជាច្រើន ដើម្បីបម្រើការអប់រំសម្រាប់កុមារ និងយុវជន។ ការអប់រំក្នុងខេត្តផ្តោតលើការបណ្តុះបណ្តាលវិជ្ជាជីវៈ កសិកម្ម និងជំនាញសម្រាប់ការងារ ដើម្បីឆ្លើយតបទៅតាមតម្រូវការការងារ និងអភិវឌ្ឍសេដ្ឋកិច្ចក្នុងតំបន់។ ក៏មានវិទ្យាស្ថានបណ្តុះបណ្តាល និងសាកលវិទ្យាល័យឯកជនខ្លះ ដែលផ្តល់ជំនាញទាន់សម័យ និងសមត្ថភាពប្រកបដោយវិជ្ជាជីវៈ។ ការអប់រំនេះក៏ទទួលបានការគាំទ្រពីអង្គការមូលនិធិ និង NGOs ដើម្បីធានាឱ្យយុវជនមានឱកាសសិក្សាទាំងស្មើស្មើ។</p></span>
+                    <img src="./img/stbtt.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+           <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="f">សេដ្ឋកិច្ច</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">សេដ្ឋកិច្ចខេត្ត បាត់ដំបង មានមូលដ្ឋានលើ កសិកម្ម, ជីវិតជនបទ, និង ពាណិជ្ជកម្មតាមតំបន់។ កសិកម្មផ្តោតលើការដាំ ស្រូវ, សណ្តែក, បន្លែ, និងផ្លែឈើ ដែលផ្គត់ផ្គង់ទីផ្សារផ្ទៃក្នុង និងនាំចេញក្រៅប្រទេស។ ក៏មានការចិញ្ចឹមសត្វ និងផលិតផលត្រីសមុទ្រពីទន្លេធំៗក្នុងខេត្ត។ ភាគច្រើននៃសេដ្ឋកិច្ចក៏ពឹងផ្អែកលើទីផ្សារក្រោម និងទីផ្សារទំនើបក្នុងតំបន់ស្រុក និងទីក្រុង។ ការវិនិយោគពីឯកជន និងបរទេសក៏ជួយបង្កើនការរីកចម្រើននៃវិស័យទេសចរណ៍ កសិកម្ម និងសេវាកម្មក្នុងខេត្ត។</p></span>
+                    <img src="./img/ecobtt.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+          <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="g">ទេសចរណ៍</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/tbtt.jpg" alt="">
+                    <span><p align="justify">ខេត្ត បាត់ដំបង គឺជាទីកន្លែងទេសចរណ៍ដែលល្បីលើធម្មជាតិ និងប្រវត្តិសាស្ត្រ។ ទន្លេស្រងាត់ និងទន្លេបាសាក់ ផ្តល់ឱកាសសម្រាប់ទេសចរណ៍ទូក និងការលំហែតាមទន្លេ។ ប្រាសាទបុរាណប្រាសាទបាយ័ន និង វត្តបុរាណក្នុងស្រុក ជាកន្លែងសក្ការបូជាសំខាន់ៗដែលទាក់ទាញភ្ញៀវទេសចរពីគ្រប់ជ្រុងជ្រោយ។ ក៏មានឆ្នេរ និងតំបន់សម្រាប់កម្សាន្តធម្មជាតិ ដែលភ្ញៀវអាចធ្វើសកម្មភាពដូចជា ឡើងភ្នំ, ដើររត់, និងស្វែងយល់ពីជីវភាពជនបទ។ ទេសចរណ៍បាត់ដំបងជួយចំណូលសម្រាប់ប្រជាជន និងជំរុញឲ្យខេត្តកាន់តែមានការអភិវឌ្ឍចម្រើន។</p></span>
+                </div>
+
+            </div>
+        </div>
+          <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="h">ការអភិវឌ្ឍនាអនាគត</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត បាត់ដំបង មានផែនការអភិវឌ្ឍអនាគតដែលផ្តោតលើ កសិកម្មទំនើប, ទេសចរណ៍បៃតង, និង ហេដ្ឋារចនាសម្ព័ន្ធទំនើប។ រដ្ឋាភិបាលនឹងសាងសង់ផ្លូវជាតិ និងប្រព័ន្ធចរាចរណ៍ដើម្បីភ្ជាប់ទីក្រុង និងស្រុកជិតខាង, ជួយជំរុញកិច្ចពាណិជ្ជកម្ម និងដឹកជញ្ជូនទំនិញ។ ការអភិវឌ្ឍទេសចរណ៍មានការផ្តោតលើការពារបរិស្ថាន និងធម្មជាតិ ដើម្បីរក្សាទេសភាពឆ្នេរ ទន្លេ និងភ្នំជាស្អាត។ ការវិនិយោគពីឯកជន និងបរទេសក៏នាំឱកាសកាន់តែច្រើនក្នុងវិស័យសេវាកម្ម និងសណ្ឋាគារ។ ទិសដៅអនាគតនៃបាត់ដំបងគឺក្លាយជាតំបន់អភិវឌ្ឍសេដ្ឋកិច្ច និងទេសចរណ៍ប្រកបដោយចម្រុះ និងស្ថាពរ។</p></span>
+                    <img src="./img/dbtt.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+
+        
+</body>
+</html>

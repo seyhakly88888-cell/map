@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svay rieng</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* scroll-behavior: smooth; */
+    }
+    html,body{
+      scroll-behavior: smooth;
+    }
+    body {
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      
+      background-image: url(./img/—Pngtree—kbach\ khmer-pattern\ cambodia_1293616.jpg);
+      background-repeat: no-repeat;
+    
+     background-size: cover;
+        
+    }
+    .info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+     & img{
+      width: 50px;
+      margin-left: 20px;
+      object-fit: cover;
+     }
+     & p{
+      place-content: center;
+      margin-top: 15px;
+      font-family: Kh Ang PhkayProek;
+      font-size: 20px;
+     }
+      & a{
+        color: bisque;
+        text-decoration: none;
+      }
+
+
+   }
+   .text {
+     
+      background-color: rgba(255, 255, 255, 0.245);
+      width: 920px;
+      height: 150px;
+      
+      border-radius: 30px;
+      border: solid 3px rgb(228, 6, 6);
+      
+      margin-top: 20px;
+      & .pro {
+       place-content: center;
+      
+      padding-top: 35px;
+      
+       & a{
+        margin-left: 10px;
+        color: rgb(16, 4, 4);
+        font-size: 20px;
+        font-family: Kh Baphnom SnehRean;
+        
+       }
+      }
+    }
+     .BAR{
+            width: 100%;
+           
+            font-size: 20px;
+            font-family: Kh Ang Samnadaichas;
+            color: white;
+            & marquee{
+              position: fixed;
+              bottom: 0;
+            }
+        }
+    .welcome{
+        width: 100%;
+        height: 500px;
+        
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        place-items: center;
+            & p{
+                text-align: center;
+                font-size: 65px;
+                font-family: Khmer HUYSAVY R;
+                color: rgb(36, 77, 189);
+            }
+       
+         & .namepro{
+            width: auto;
+            height: auto;
+            
+        }
+        & img{
+           width: 450px;
+           height: 450px;
+           object-fit: cover;
+           margin-left: 20%;
+           border-radius: 20px 50px;
+           border: solid 2px white;
+           box-shadow: rgba(204, 198, 198, 0.25) 0px 14px 28px, rgba(228, 221, 221, 0.22) 0px 10px 10px;
+        }
+    }
+    .indro{
+        width: auto;
+        height: auto;
+        
+        & p{
+            width: 800px;
+            place-content: center;
+            border-radius: 50px 50px 0px 0px;
+            height: 100px;
+            background-color: rgb(70, 15, 5);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:AKbalthom Kbach ;
+            box-shadow: rgba(230, 225, 225, 0.19) 0px 10px 20px, rgba(234, 232, 232, 0.23) 0px 6px 6px;
+        }
+    }
+    .info1{
+        width: auto;
+        height: auto;
+           
+        
+        & .list{
+            width: 800px;
+            
+           
+            height: 550px;
+            background-color: rgba(137, 43, 226, 0.37);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:Kh OreangOv Thmey;
+             border-radius: 0px 0px 50px 50px;
+             box-shadow: rgba(239, 234, 234, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+             & a{
+                color: beige;
+                text-decoration: none;
+             }
+        }
+    }
+    .explain{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(250, 235, 215, 0.384);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex2{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                        
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-right: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex1{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(212, 140, 16);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+     .explain1{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex1{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.312);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex22{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                       
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-left: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex12{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(223, 15, 15);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+    .top{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      & img{
+        width: 70px;
+        margin-bottom: 30px;
+      }
+    }
+</style>
+<body>
+    <div class="top">
+     <a href="#"><img src="./img/top.png" alt="">
+    </div>
+     <div class="BAR">
+      <marquee bgcolor="red" 
+      onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">និស្សិតឈ្មោះ: លី សីហៈ ក្រុម SW34 ជំនាន់ទី 23 ឆ្នាំទី 1 ឆមាសទី 2 មុខវិជ្ជា WD I បង្រៀនដោយ លោកគ្រូ រី វិសាន  នៃ វិទ្យាស្ថានស៊ីតិក || Project Map</marquee>
+
+    </div>
+     </center>
+    
+      <div class="info">
+        
+
+         <a href="./home.html"><img id="home" src="./img/12249422.png" alt=""></a> 
+          <a href="./home.html"><p>ទំព័រដើម</p></a>
+         <a href="./contact.html"><img id="ct" src="./img/3237155-200.png" alt=""></a> 
+          <a href="./contact.html"><p>ទំនាក់ទំនង</p></a>
+      </div>
+    
+    <center>
+
+        <div class="text">
+          <div class="pro">
+            <center>
+    
+                <a href="./phnompenh.html">រាជធានីភ្នំពេញ</a>
+                <a href="./kampot.html">កំពត</a>
+                <a href="./kep.html">កែប</a>
+                <a href="./kampongchnang.html">កំពង់ឆ្នាំង</a>
+                <a href="./pursat.html">ពោធិ៍សាត់</a>
+                <a href="./battambong.html">បាត់ដំបង់</a>
+                <a href="./pailin.html">ប៉ៃលិន</a>
+                <a href="./banteay meanchey.html">បន្ទាយមានជ័យ</a>
+                <a href="./siemreap.html">សៀមរាប</a>
+                <a href="./kampong Thom.html">កំពង់ធំ</a>
+                <a href="./kampongcham.html">កំពង់ចាម</a>
+                <a href="./preyveng.html">ព្រៃវែង</a>
+                <a href="./svay rieng.html">ស្វាយរៀង</a>
+                <a href="./takeo.html">តាកែវ</a>
+                <a href="./kandal.html">កណ្តាល</a>
+                <a href="./kampongspeu.html">កំពង់ស្ពឺ</a>
+                <a href="./kratie.html">ក្រចេះ</a>
+                <a href="./stung treng.html">ស្ទឹងត្រែង</a>
+                <a href="./mondulkiri.html">មណ្ឌលគីរី</a>
+                <a href="./preah vihear.html">ព្រះវិហារ</a>
+                <a href="./ratanakiri.html">រតនៈគីរី</a>
+                <a href="./koh kong.html">កោះកុង</a>
+                <a href="./oddar meanchey.html">ឧត្តរមានជ័យ</a>
+                <a href="./tbong khmum.html">ត្បូងឃ្មុំ</a>
+                <a href="./sihanoukvill.html">ព្រះសីហនុ</a>
+            </center>
+          </div>
+          
+          
+        </div>
+    </center>
+    
+
+        <div class="welcome">
+            <p>សូមស្វាគមន៍មកកកាន់<br>ខេត្តស្វាយរៀង</p>
+            <div class="nampro">
+                
+                <img src="./img/svayreng.jpg" alt="">
+            </div>
+        </div>
+        <center>
+            <div class="indro">
+                <p>ខាងក្រោមនេះអ្នកនឹងអាចយល់ដឹងអំពីព័ត៌មានក្នុងខេត្តស្វាយរៀង</p>
+            </div>
+        </center>
+        <center>
+
+            <div class="info1">
+                 
+               <div class="list">
+                    <span style="font-family: Khmer HUYSAVY R;color: white;"><p id="meteka" ><u>មាតិការ</u></p></span>
+                    <a href="#a"><p>១.ប្រវតិ្តខេត្តស្វាយរៀង...................................................................................។</p></a>
+                    <a href="#b"><p>២.ទីតាំងភូមិសាស្ត្រ.........................................................................................។</p></a>
+                    <a href="#c"><p>៣.ប្រជាជន និងវប្បធម៌..................................................................................។</p></a>
+                    <a href="#d"><p>៤.ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ................................................................។</p></a>
+                    <a href="#e"><p>៥.ការអប់រំ និងស្ថាប័នសិក្សា...........................................................................។</p></a>
+                    <a href="#f"><p>៦.សេដ្ឋកិច្ច........................................................................................................។</p></a>
+                    <a href="#g"><p>៧.ទេសចរណ៍...................................................................................................។</p></a>
+                    <a href="#h"><p>៨.ការអភិវឌ្ឍនាអនាគត..................................................................................។</p></a>
+               </div>
+                
+            </div>
+            
+        </center>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="a">ប្រវតិ្តខេត្តស្វាយរៀង</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/hsv.jpg" alt="">
+                    <span><p align="justify">ខេត្ត ស្វាយរៀង មានប្រវត្តិសាស្ត្រយូរអង្វែង ហើយមានតួនាទីសំខាន់ក្នុងប្រព័ន្ធកសិកម្ម និងពាណិជ្ជកម្មរបស់ប្រទេសកម្ពុជា។ តំបន់នេះមានស្រែទន្លេធំៗ និងទន្លេតូចៗដែលប្រជាជនប្រើសម្រាប់កសិកម្ម និងជីវិតប្រចាំថ្ងៃ។ នៅសម័យអង្គរ ស្វាយរៀងធ្លាប់ជាផ្នែកមួយនៃអាណាចក្រខ្មែរ និងជាគន្លងពាណិជ្ជកម្មតាមទន្លេមេគង្គ។ នៅសម័យអាណានិគមបារាំង ខេត្តក្លាយជាតំបន់សំខាន់សម្រាប់ កសិកម្ម, រុក្ខជាតិ និងអាជីវកម្មតូចៗ។ បន្ទាប់ពីសង្គ្រាម និងភាពវិបត្តិ ស្វាយរៀងបានអភិវឌ្ឍឡើងវិញ និងក្លាយជាខេត្តដែលមានសេដ្ឋកិច្ចផ្អែកលើកសិកម្ម និងទេសចរណ៍ស្រស់ស្អាត។</p></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="b">ទីតាំងភូមិសាស្ត្រ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត ស្វាយរៀង ស្ថិតនៅភាគកណ្តាលនៃប្រទេសកម្ពុជា ជាប់នឹងខេត្ត កំពង់ធំ និង កំពង់ចាម ខាងជើង, កំពង់ស្ពឺ ខាងលិច, និងជិតប្រទេសវៀតណាមខាងកើត។ ខេត្តនេះមានទីរួមខេត្តគឺក្រុង ស្វាយរៀង ដែលស្ថិតនៅកណ្តាលខេត្ត និងជាគន្លងសំខាន់សម្រាប់ការតភ្ជាប់ទៅកាន់ខេត្តជិតខាង។ ភូមិសាស្ត្ររួមមាន ដីស្រែទន្លេ, ព្រៃឈើ, និងភ្នំតូចៗ, ដែលសាកសមសម្រាប់កសិកម្ម, នេសាទ និងទេសចរណ៍ធម្មជាតិ។</p></span>
+                    <img src="./img/mapsv.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="c">ប្រជាជន និងវប្បធម៌</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/ppsv.jpg" alt="">
+                    <span><p align="justify">ខេត្ត ស្វាយរៀង មានប្រជាជនប្រមាណ ជាង ៤០០,០០០នាក់ ភាគច្រើនជាជនជាតិខ្មែរ និងជាពុទ្ធសាសនិក។ ក៏មានសហគមន៍ជនជាតិចាម និងវៀតណាមដែលរស់នៅរួមគ្នា បង្កើតឱ្យខេត្តមានវប្បធម៌ចម្រុះ និងភាពសន្តិសុខអន្តរសាសនា។ ជីវិតប្រចាំថ្ងៃរបស់ប្រជាជនផ្អែកលើ កសិកម្ម, នេសាទ, និងសិប្បកម្មស្រុក។ ពិធីបុណ្យប្រពៃណីដូចជា បុណ្យចូលឆ្នាំខ្មែរ, បុណ្យភ្ជុំបិណ្ឌ និងបុណ្យអុំទូក តែងតែប្រារព្ធឡើងយ៉ាងធំទូលាយ។ ការរួមបញ្ចូលរវាងប្រពៃណីខ្មែរ និងទំនៀមទម្លាប់ជនជាតិភាគតិចធ្វើឱ្យខេត្តស្វាយរៀងក្លាយជាតំបន់មានវប្បធម៌ចម្រុះ និងទាក់ទាញភ្ញៀវទេសចរ។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="d">ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/archsv.jpg" alt="">
+                    <span><p align="justify">ខេត្ត ស្វាយរៀង មានស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗដែលបង្ហាញពីប្រវត្តិសាស្ត្រ និងវប្បធម៌តំបន់។ នៅក្នុងខេត្តមាន វត្តបុរាណ និងប្រាសាទតូចៗ ដែលបង្ហាញពីសាសនាប្រពៃណីខ្មែរ។ ក្រុងស្វាយរៀងមាន សំណង់រដ្ឋបាល និងសាលារៀនពីសម័យអាណានិគមបារាំង, ដែលជាសំណង់ទំនើបតាមស្តង់ដារអ៊ឺរ៉ុប។ កន្លែងទេសចរណ៍ប្រវត្តិសាស្ត្រនេះទាក់ទាញភ្ញៀវទេសចរដើម្បីស្វែងយល់ពីវប្បធម៌ និងប្រវត្តិរបស់ខេត្ត។ ការរួមបញ្ចូលរវាងសំណង់បុរាណ និងទំនើបនេះធ្វើឲ្យស្វាយរៀងក្លាយជាតំបន់មានតម្លៃប្រវត្តិសាស្ត្រ និងទេសចរណ៍សំខាន់។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="e">ការអប់រំ និងស្ថាប័នសិក្សា</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត ស្វាយរៀង មានប្រព័ន្ធអប់រំចាប់ពីកម្រិតបឋមសិក្សា រហូតដល់វិទ្យាល័យ និងមជ្ឈមណ្ឌលបណ្តុះបណ្តាលវិជ្ជាជីវៈ។ មានសាលារៀនសាធារណៈ និងឯកជនដែលផ្តល់ឱកាសសិក្សារសម្រាប់កុមារ និងយុវជនទាំងនៅក្នុងទីរួមខេត្ត និងតំបន់ជនបទ។ សាលាវិជ្ជាជីវៈ និងសាកលវិទ្យាល័យផ្តោតលើជំនាញ កសិកម្ម, ពាណិជ្ជកម្ម, បច្ចេកវិទ្យា និងវិស័យសេវាកម្ម ដើម្បីបង្កើតកម្លាំងពលកម្មមានជំនាញ។ ការអប់រំនេះទទួលបានការគាំទ្រពីរដ្ឋ និងអង្គការមិនមែនរដ្ឋាភិបាល (NGOs) ដើម្បីធានាឱ្យយុវជនទទួលបានឱកាសសិក្សាដូចស្មើស្មើ និងអាចចូលរួមអភិវឌ្ឍសេដ្ឋកិច្ចនាពេលអនាគត។</p></span>
+                    <img src="./img/stsv.jpeg" alt="">
+                </div>
+
+            </div>
+         </div>
+           <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="f">សេដ្ឋកិច្ច</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">សេដ្ឋកិច្ចខេត្ត ស្វាយរៀង ផ្អែកលើ កសិកម្ម, នេសាទ និងពាណិជ្ជកម្មតាមដែនជិតប្រទេស។ កសិកម្មជាគ្រឿងសំខាន់សម្រាប់ជីវភាពប្រជាជន ដោយមានការដាំដុះ ស្រូវ, ម្រេច, ផ្លែឈើ និងត្រីទន្លេ។ ផលិតផលកសិកម្មភាគច្រើនត្រូវបានចែកចាយក្នុងខេត្ត និងនាំចេញទៅខេត្តជិតខាង និងប្រទេសជិតខាង ដើម្បីបង្កើនចំណូលសម្រាប់ប្រជាជន។ ភាគច្រើននៃប្រជាជនក៏ពាក់ព័ន្ធនឹង អាជីវកម្មតូចៗ និងសិប្បកម្មស្រុក, ដែលជួយចូលរួមក្នុងការលើកស្ទួយសេដ្ឋកិច្ចក្នុងតំបន់។ ការវិនិយោគពីឯកជន និងអង្គការជាតិ-អន្ដរជាតិក៏ជួយលើកកម្ពស់ឧស្សាហកម្ម និងសេវាកម្មក្នុងខេត្តស្វាយរៀង។</p></span>
+                    <img src="./img/ecosv.jpeg" alt="">
+                </div>
+
+            </div>
+         </div>
+          <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="g">ទេសចរណ៍</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/tsv.jpg" alt="">
+                    <span><p align="justify">ខេត្ត ស្វាយរៀង មានទេសភាពធម្មជាតិស្រស់ស្អាត និងកន្លែងទេសចរណ៍ច្រើនទាក់ទាញភ្ញៀវទេសចរ។ ភ្ញៀវអាចទស្សនា ទន្លេ, បឹង និងភ្នំតូចៗ ដែលសាកសមសម្រាប់កម្សាន្តទូក និងសកម្មភាពក្រៅបន្ទប់។ មានកន្លែងប្រវត្តិសាស្ត្រដូចជា វត្តបុរាណ និងប្រាសាទតូចៗ, និងសំណង់សាសនាអ៊ីស្លាម ដែលបង្ហាញពីវប្បធម៌ចម្រុះក្នុងតំបន់។ ការទស្សនាក៏អាចរួមបញ្ចូលជាមួយ អាហារប្រពៃណី និងផលិតផលស្រុក ដូចជា ត្រីទន្លេ ផ្លែឈើ និងសាច់ព្រៃ ដែលផ្តល់បទពិសោធន៍ដ៏ពិសេសសម្រាប់ភ្ញៀវទេសចរ។</p></span>
+                </div>
+
+            </div>
+        </div>
+          <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="h">ការអភិវឌ្ឍនាអនាគត</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត ស្វាយរៀង មានផែនការអភិវឌ្ឍអនាគតផ្តោតលើ កសិកម្មទំនើប, ឧស្សាហកម្មតូច និងទេសចរណ៍។ រដ្ឋាភិបាលមានគម្រោងកែលម្អ បណ្ដាញផ្លូវ, ស្ពាន និងច្រកពាណិជ្ជកម្ម ដើម្បីភ្ជាប់ក្រុង និងស្រុកជិតខាង និងជំរុញពាណិជ្ជកម្ម។ ការវិនិយោគលើកសិកម្ម ដូចជា ស្រូវ, ម្រេច, ផ្លែឈើ និងត្រីទន្លេ កំពុងត្រូវបានលើកស្ទួយ ដើម្បីបង្កើនចំណូល និងការនាំចេញ។ ខេត្តក៏មានសក្តានុពលអភិវឌ្ឍ ទេសចរណ៍ធម្មជាតិ និងវប្បធម៌ ដោយផ្តោតលើការអភិរក្សបរិស្ថាន និងសំណង់ប្រវត្តិសាស្ត្រ។ ការទាក់ទាញវិនិយោគពីឯកជន និងបរទេសនឹងជួយបង្កើនសេដ្ឋកិច្ច និងបង្កើតឱកាសការងារថ្មីៗសម្រាប់ប្រជាពលរដ្ឋ។</p></span>
+                    <img src="./img/dsv.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+
+        
+</body>
+</html>

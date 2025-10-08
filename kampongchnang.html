@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kampong chnang</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* scroll-behavior: smooth; */
+    }
+    html,body{
+      scroll-behavior: smooth;
+    }
+    body {
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      
+      background-image: url(./img/—Pngtree—kbach\ khmer-pattern\ cambodia_1293616.jpg);
+      background-repeat: no-repeat;
+    
+     background-size: cover;
+        
+    }
+    .info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+     & img{
+      width: 50px;
+      margin-left: 20px;
+      object-fit: cover;
+     }
+     & p{
+      place-content: center;
+      margin-top: 15px;
+      font-family: Kh Ang PhkayProek;
+      font-size: 20px;
+     }
+      & a{
+        color: bisque;
+        text-decoration: none;
+      }
+
+
+   }
+   .text {
+     
+      background-color: rgba(255, 255, 255, 0.245);
+      width: 920px;
+      height: 150px;
+      
+      border-radius: 30px;
+      border: solid 3px rgb(228, 6, 6);
+      
+      margin-top: 20px;
+      & .pro {
+       place-content: center;
+      
+      padding-top: 35px;
+      
+       & a{
+        margin-left: 10px;
+        color: rgb(16, 4, 4);
+        font-size: 20px;
+        font-family: Kh Baphnom SnehRean;
+        
+       }
+      }
+    }
+     .BAR{
+            width: 100%;
+           
+            font-size: 20px;
+            font-family: Kh Ang Samnadaichas;
+            color: white;
+            & marquee{
+              position: fixed;
+              bottom: 0;
+            }
+        }
+    .welcome{
+        width: 100%;
+        height: 500px;
+        
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        place-items: center;
+            & p{
+                text-align: center;
+                font-size: 65px;
+                font-family: Khmer HUYSAVY R;
+                color: rgb(36, 77, 189);
+            }
+       
+         & .namepro{
+            width: auto;
+            height: auto;
+            
+        }
+        & img{
+           width: 450px;
+           height: 450px;
+           object-fit: cover;
+           margin-left: 20%;
+           border-radius: 20px 50px;
+           border: solid 2px white;
+           box-shadow: rgba(204, 198, 198, 0.25) 0px 14px 28px, rgba(228, 221, 221, 0.22) 0px 10px 10px;
+        }
+    }
+    .indro{
+        width: auto;
+        height: auto;
+        
+        & p{
+            width: 800px;
+            place-content: center;
+            border-radius: 50px 50px 0px 0px;
+            height: 100px;
+            background-color: rgb(70, 15, 5);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:AKbalthom Kbach ;
+            box-shadow: rgba(230, 225, 225, 0.19) 0px 10px 20px, rgba(234, 232, 232, 0.23) 0px 6px 6px;
+        }
+    }
+    .info1{
+        width: auto;
+        height: auto;
+           
+        
+        & .list{
+            width: 800px;
+            
+           
+            height: 550px;
+            background-color: rgba(137, 43, 226, 0.37);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:Kh OreangOv Thmey;
+             border-radius: 0px 0px 50px 50px;
+             box-shadow: rgba(239, 234, 234, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+             & a{
+                color: beige;
+                text-decoration: none;
+             }
+        }
+    }
+    .explain{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(250, 235, 215, 0.384);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex2{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                        
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-right: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex1{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(212, 140, 16);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+     .explain1{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex1{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.312);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex22{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                       
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-left: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex12{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(223, 15, 15);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+    .top{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      & img{
+        width: 70px;
+        margin-bottom: 30px;
+      }
+    }
+</style>
+<body>
+    <div class="top">
+     <a href="#"><img src="./img/top.png" alt="">
+    </div>
+     <div class="BAR">
+      <marquee bgcolor="red" 
+      onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">និស្សិតឈ្មោះ: លី សីហៈ ក្រុម SW34 ជំនាន់ទី 23 ឆ្នាំទី 1 ឆមាសទី 2 មុខវិជ្ជា WD I បង្រៀនដោយ លោកគ្រូ រី វិសាន  នៃ វិទ្យាស្ថានស៊ីតិក || Project Map</marquee>
+
+    </div>
+     </center>
+    
+      <div class="info">
+        
+
+         <a href="./home.html"><img id="home" src="./img/12249422.png" alt=""></a> 
+          <a href="./home.html"><p>ទំព័រដើម</p></a>
+         <a href="./contact.html"><img id="ct" src="./img/3237155-200.png" alt=""></a> 
+          <a href="./contact.html"><p>ទំនាក់ទំនង</p></a>
+      </div>
+    
+    <center>
+
+        <div class="text">
+          <div class="pro">
+            <center>
+    
+                <a href="./phnompenh.html">រាជធានីភ្នំពេញ</a>
+                <a href="./kampot.html">កំពត</a>
+                <a href="./kep.html">កែប</a>
+                <a href="./kampongchnang.html">កំពង់ឆ្នាំង</a>
+                <a href="./pursat.html">ពោធិ៍សាត់</a>
+                <a href="./battambong.html">បាត់ដំបង់</a>
+                <a href="./pailin.html">ប៉ៃលិន</a>
+                <a href="./banteay meanchey.html">បន្ទាយមានជ័យ</a>
+                <a href="./siemreap.html">សៀមរាប</a>
+                <a href="./kampong Thom.html">កំពង់ធំ</a>
+                <a href="./kampongcham.html">កំពង់ចាម</a>
+                <a href="./preyveng.html">ព្រៃវែង</a>
+                <a href="./svay rieng.html">ស្វាយរៀង</a>
+                <a href="./takeo.html">តាកែវ</a>
+                <a href="./kandal.html">កណ្តាល</a>
+                <a href="./kampongspeu.html">កំពង់ស្ពឺ</a>
+                <a href="./kratie.html">ក្រចេះ</a>
+                <a href="./stung treng.html">ស្ទឹងត្រែង</a>
+                <a href="./mondulkiri.html">មណ្ឌលគីរី</a>
+                <a href="./preah vihear.html">ព្រះវិហារ</a>
+                <a href="./ratanakiri.html">រតនៈគីរី</a>
+                <a href="./koh kong.html">កោះកុង</a>
+                <a href="./oddar meanchey.html">ឧត្តរមានជ័យ</a>
+                <a href="./tbong khmum.html">ត្បូងឃ្មុំ</a>
+                <a href="./sihanoukvill.html">ព្រះសីហនុ</a>
+                
+            </center>
+          </div>
+          
+          
+        </div>
+    </center>
+    
+
+        <div class="welcome">
+            <p>សូមស្វាគមន៍មកកកាន់<br>ខេត្តកំពង់ឆ្នាំង</p>
+            <div class="nampro">
+                
+                <img src="./img/kampong Chnang.jpg" alt="">
+            </div>
+        </div>
+        <center>
+            <div class="indro">
+                <p>ខាងក្រោមនេះអ្នកនឹងអាចយល់ដឹងអំពីព័ត៌មានក្នុងខេត្តកំពង់ឆ្នាំង</p>
+            </div>
+        </center>
+        <center>
+
+            <div class="info1">
+                 
+               <div class="list">
+                    <span style="font-family: Khmer HUYSAVY R;color: white;"><p id="meteka" ><u>មាតិការ</u></p></span>
+                    <a href="#a"><p>១.ប្រវតិ្តខេត្តកំពង់ឆ្នាំង....................................................................................។</p></a>
+                    <a href="#b"><p>២.ទីតាំងភូមិសាស្ត្រ.........................................................................................។</p></a>
+                    <a href="#c"><p>៣.ប្រជាជន និងវប្បធម៌..................................................................................។</p></a>
+                    <a href="#d"><p>៤.ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ................................................................។</p></a>
+                    <a href="#e"><p>៥.ការអប់រំ និងស្ថាប័នសិក្សា...........................................................................។</p></a>
+                    <a href="#f"><p>៦.សេដ្ឋកិច្ច........................................................................................................។</p></a>
+                    <a href="#g"><p>៧.ទេសចរណ៍...................................................................................................។</p></a>
+                    <a href="#h"><p>៨.ការអភិវឌ្ឍនាអនាគត..................................................................................។</p></a>
+               </div>
+                
+            </div>
+            
+        </center>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="a">ប្រវតិ្តខេត្តកំពង់ឆ្នាំង</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/hkn.jpg" alt="">
+                    <span><p align="justify">ខេត្តកំពង់ឆ្នាំង ជាខេត្តមួយនៅភាគកណ្ដាលប្រទេសកម្ពុជា។ ឈ្មោះ "កំពង់ឆ្នាំង" មកពីកន្លែងដែលធ្លាប់ធ្វើឆ្នាំងដី និងឆ្នាំងដែក។ តាំងពីសម័យអង្គរ តំបន់នេះមានសារៈសំខាន់ក្នុងការផ្គត់ផ្គង់ស្រូវ និងជាគន្លងទឹកពាណិជ្ជកម្ម។ នៅសម័យបច្ចុប្បន្ន កំពង់ឆ្នាំងមានសក្តានុពលកសិកម្ម សត្វទំនាប និងជាកន្លែងកើតមានវប្បធម៌បុរាណជាច្រើន។</p></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="b">ទីតាំងភូមិសាស្ត្រ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្តកំពង់ឆ្នាំង ស្ថិតនៅភាគកណ្តាលកម្ពុជា មានព្រំប្រទល់ជាមួយ ខេត្តបាត់ដំបង ពោធិ៍សាត់ កំពង់ស្ពឺ កណ្តាល ព្រៃវែង និងកំពង់ចាម។ តំបន់ភាគច្រើនជាទំនាប សម្បូរទឹក សមស្របសម្រាប់កសិកម្ម និងនេសាទ។ ខេត្តនេះក៏មានទន្លេសាប និងទន្លេមហាអង្គរឆ្លងកាត់ ដែលជួយអោយដីមានជីជាតិ និងអភិវឌ្ឍជាវាលស្រូវធំៗ។ ក្រៅពីនេះ ក៏មានព្រៃភ្នំ និងទេសភាពធម្មជាតិ ដែលអាចជាសក្ដានុពលទេសចរណ៍ផងដែរ។</p></span>
+                    <img src="./img/mapkn.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="c">ប្រជាជន និងវប្បធម៌</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/ppkn.jpeg" alt="">
+                    <span><p align="justify">ប្រជាជននៅខេត្តកំពង់ឆ្នាំងភាគច្រើនជាជនជាតិខ្មែរ ដែលរស់នៅជីវភាពសាមញ្ញ ប្រកបដោយកសិកម្ម ជាពិសេសការដាំស្រូវ និងចិញ្ចឹមត្រី។ ក្រៅពីនេះ ក៏មានជនជាតិដទៃទៀតដូចជា ជនជាតិវៀតណាម និងចិនរស់នៅតាមតំបន់ពាណិជ្ជកម្ម និងជិតទន្លេសាប។
+
+វប្បធម៌ក្នុងខេត្តមានភាពសម្បូរបែប ដោយប្រជាជនថែរក្សាប្រពៃណីអភិវឌ្ឍន៍តាមរយៈ ពិធីបុណ្យប្រពៃណី ដូចជា បុណ្យចូលឆ្នាំខ្មែរ បុណ្យភ្ជុំបិណ្ឌ និងបុណ្យកាតិន។ ក្រៅពីនេះ ក៏មាន សិល្បៈប្រជាប្រិយ ដូចជា រាំប្រជាប្រិយ ការចម្រៀង និងហ្គោលប្រពៃណី ដែលជួយបន្តអត្តសញ្ញាណវប្បធម៌ខ្មែរ។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="d">ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/archkn.jpg" alt="">
+                    <span><p align="justify">ខេត្តកំពង់ឆ្នាំង មានសំណង់ស្ថាបត្យកម្មសំខាន់ៗជាច្រើន។
+មានប្រាសាទបុរាណ និងវត្តអារាម ដែលបន្តសិល្បៈអង្គរ និងវប្បធម៌ព្រះពុទ្ធសាសនា។
+មានទីផ្សារទំនើប សំណង់រដ្ឋបាល និងអគារបម្រើសាធារណៈផ្សេងៗ។
+ស្ពាន និងផ្លូវជាតិជួយភ្ជាប់ខេត្តនេះជាមួយតំបន់ផ្សេងៗ។
+សំណង់ទាំងនេះបង្ហាញពីប្រវត្តិសាស្រ្ត និងការអភិវឌ្ឍន៍សង្គមសេដ្ឋកិច្ចបច្ចុប្បន្ន។
+</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="e">ការអប់រំ និងស្ថាប័នសិក្សា</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្តកំពង់ឆ្នាំងមានប្រព័ន្ធអប់រំពីមូលដ្ឋានទៅលើសាកលវិទ្យាល័យ។
+មានសាលារៀនមូលដ្ឋាន និងវិទ្យាល័យច្រើនទូទាំងខេត្តសម្រាប់បង្រៀនកុមារ និងយុវវ័យ។
+ខេត្តកំពង់ឆ្នាំងក៏មានមណ្ឌលបណ្តុះបណ្តាលវិជ្ជាជីវៈ និងសាលាកម្រិតខ្ពស់។
+សាកលវិទ្យាល័យ និងវិទ្យាស្ថានជាច្រើនផ្តល់ការអប់រំនៅជំនាញផ្សេងៗ ដូចជា វិទ្យាសាស្ត្រ កសិកម្ម និងបច្ចេកវិទ្យា។
+ប្រជាជនមានឱកាសចូលរួមកម្មវិធីសិក្សា និងបណ្តុះបណ្តាលដើម្បីអភិវឌ្ឍជំនាញ និងជីវភាព។ </p></span>
+                    <img src="./img/stkn.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+           <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="f">សេដ្ឋកិច្ច</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">សេដ្ឋកិច្ចខេត្តកំពង់ឆ្នាំង
+
+សេដ្ឋកិច្ចខេត្តកំពង់ឆ្នាំងផ្អែកលើកសិកម្ម ជាពិសេសការដាំស្រូវ បន្លែ និងផ្លែឈើ។
+កសិកម្មទំនាប និងនេសាទនៅតាមទន្លេសាប ជួយផ្គត់ផ្គង់អាហារ និងចំណូលសម្រាប់ប្រជាជន។
+មានសហគ្រិនភាព និងពាណិជ្ជកម្មតាមទីផ្សារ និងតាមទន្លេ ដែលជួយលើកស្ទួយសេដ្ឋកិច្ចក្នុងខេត្ត។
+វិស័យសេវាកម្ម និងទេសចរណ៍ក៏កំពុងអភិវឌ្ឍ ដោយមានទេសភាពធម្មជាតិ និងវប្បធម៌បុរាណទាក់ទាញភ្ញៀវទេសចរ។
+សេដ្ឋកិច្ចខេត្តកំពង់ឆ្នាំងរីកចម្រើនដោយការចូលរួមរួមគ្នារវាងកសិករ ពាណិជ្ជករ និងរដ្ឋាភិបាល។
+</p></span>
+                    <img src="./img/ecokn.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+          <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="g">ទេសចរណ៍</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/tkn.jpg" alt="">
+                    <span><p align="justify">ទេសចរណ៍ខេត្តកំពង់ឆ្នាំង
+
+ខេត្តកំពង់ឆ្នាំងមានទេសភាពធម្មជាតិស្រស់ស្អាត និងទន្លេសាបទូទាំងខេត្ត។
+ទេសចរណ៍សំខាន់ៗរួមមាន ទន្លេសាប, វត្តអារាម, និង ប្រាសាទបុរាណ ដែលបង្ហាញពីវប្បធម៌ និងប្រវត្តិសាស្រ្តខ្មែរ។
+ភ្នំ និងព្រៃនៅខេត្តនេះក៏សាកសមសម្រាប់កម្សាន្ត និងការស្រាវជ្រាវធម្មជាតិ។
+ទីផ្សារប្រពៃណី និងអាហារបែបខ្មែរ ជារឿងទាក់ទាញភ្ញៀវទេសចរ។
+ខេត្តកំពង់ឆ្នាំងកំពុងអភិវឌ្ឍទេសចរណ៍ដោយរួមបញ្ចូលធម្មជាតិ បុរាណ និងវប្បធម៌ក្នុងការទាក់ទាញអ្នកទេសចរ។
+</p></span>
+                </div>
+
+            </div>
+        </div>
+          <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="h">ការអភិវឌ្ឍនាអនាគត</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្តកំពង់ឆ្នាំងមានសក្តានុពលខ្ពស់ក្នុងការអភិវឌ្ឍនាពេលអនាគត។
+កសិកម្មទំនាប និងនេសាទត្រូវបានបង្កើនប្រសិទ្ធភាព ដើម្បីបង្កើនផលផលិត និងចំណូល។
+វិស័យទេសចរណ៍ កសិកម្មសហគ្រិន និងសេវាកម្មកំពុងតែអភិវឌ្ឍ ដើម្បីបង្កើនឱកាសការងារ និងសេដ្ឋកិច្ចក្នុងខេត្ត។
+ការវិនិយោគក្នុងសាលារៀន មណ្ឌលបណ្តុះបណ្តាល និងហេដ្ឋារចនាសម្ព័ន្ធសាធារណៈ នឹងលើកស្ទួយការអភិវឌ្ឍនាប្រកបដោយចីរភាព។
+អនាគតខេត្តកំពង់ឆ្នាំងសង្ឃឹមថានឹងក្លាយជាគន្លងសេដ្ឋកិច្ច និងទេសចរណ៍សំខាន់មួយរបស់ប្រទេស។</p></span>
+                    <img src="./img/dkn.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+
+        
+</body>
+</html>

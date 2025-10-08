@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kampot</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* scroll-behavior: smooth; */
+    }
+    html,body{
+      scroll-behavior: smooth;
+    }
+    body {
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      
+      background-image: url(./img/—Pngtree—kbach\ khmer-pattern\ cambodia_1293616.jpg);
+      background-repeat: no-repeat;
+    
+     background-size: cover;
+        
+    }
+    .info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+     & img{
+      width: 50px;
+      margin-left: 20px;
+      object-fit: cover;
+     }
+     & p{
+      place-content: center;
+      margin-top: 15px;
+      font-family: Kh Ang PhkayProek;
+      font-size: 20px;
+     }
+      & a{
+        color: bisque;
+        text-decoration: none;
+      }
+
+
+   }
+   .text {
+     
+      background-color: rgba(255, 255, 255, 0.245);
+      width: 920px;
+      height: 150px;
+      
+      border-radius: 30px;
+      border: solid 3px rgb(228, 6, 6);
+      
+      margin-top: 20px;
+      & .pro {
+       place-content: center;
+      
+      padding-top: 35px;
+      
+       & a{
+        margin-left: 10px;
+        color: rgb(16, 4, 4);
+        font-size: 20px;
+        font-family: Kh Baphnom SnehRean;
+        
+       }
+      }
+    }
+     .BAR{
+            width: 100%;
+           
+            font-size: 20px;
+            font-family: Kh Ang Samnadaichas;
+            color: white;
+            & marquee{
+              position: fixed;
+              bottom: 0;
+            }
+        }
+    .welcome{
+        width: 100%;
+        height: 500px;
+        
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        place-items: center;
+            & p{
+                text-align: center;
+                font-size: 65px;
+                font-family: Khmer HUYSAVY R;
+                color: rgb(36, 77, 189);
+            }
+       
+         & .namepro{
+            width: auto;
+            height: auto;
+            
+        }
+        & img{
+           width: 450px;
+           height: 450px;
+           object-fit: cover;
+           margin-left: 20%;
+           border-radius: 20px 50px;
+           border: solid 2px white;
+           box-shadow: rgba(204, 198, 198, 0.25) 0px 14px 28px, rgba(228, 221, 221, 0.22) 0px 10px 10px;
+        }
+    }
+    .indro{
+        width: auto;
+        height: auto;
+        
+        & p{
+            width: 800px;
+            place-content: center;
+            border-radius: 50px 50px 0px 0px;
+            height: 100px;
+            background-color: rgb(70, 15, 5);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:AKbalthom Kbach ;
+            box-shadow: rgba(230, 225, 225, 0.19) 0px 10px 20px, rgba(234, 232, 232, 0.23) 0px 6px 6px;
+        }
+    }
+    .info1{
+        width: auto;
+        height: auto;
+           
+        
+        & .list{
+            width: 800px;
+            
+           
+            height: 550px;
+            background-color: rgba(137, 43, 226, 0.37);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:Kh OreangOv Thmey;
+             border-radius: 0px 0px 50px 50px;
+             box-shadow: rgba(239, 234, 234, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+             & a{
+                color: beige;
+                text-decoration: none;
+             }
+        }
+    }
+    .explain{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(250, 235, 215, 0.384);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex2{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                        
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-right: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex1{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(212, 140, 16);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+     .explain1{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex1{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.312);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex22{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                       
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-left: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex12{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(223, 15, 15);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+    .top{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      & img{
+        width: 70px;
+        margin-bottom: 30px;
+      }
+    }
+</style>
+<body>
+    <div class="top">
+     <a href="#"><img src="./img/top.png" alt="">
+    </div>
+     <div class="BAR">
+      <marquee bgcolor="red" 
+      onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">និស្សិតឈ្មោះ: លី សីហៈ ក្រុម SW34 ជំនាន់ទី 23 ឆ្នាំទី 1 ឆមាសទី 2 មុខវិជ្ជា WD I បង្រៀនដោយ លោកគ្រូ រី វិសាន  នៃ វិទ្យាស្ថានស៊ីតិក || Project Map</marquee>
+
+    </div>
+     </center>
+    
+      <div class="info">
+        
+
+         <a href="./home.html"><img id="home" src="./img/12249422.png" alt=""></a> 
+          <a href="./home.html"><p>ទំព័រដើម</p></a>
+         <a href="./contact.html"><img id="ct" src="./img/3237155-200.png" alt=""></a> 
+          <a href="./contact.html"><p>ទំនាក់ទំនង</p></a>
+      </div>
+    
+    <center>
+
+        <div class="text">
+          <div class="pro">
+            <center>
+    
+                 <a href="./phnompenh.html">រាជធានីភ្នំពេញ</a>
+                <a href="./kampot.html">កំពត</a>
+                <a href="./kep.html">កែប</a>
+                <a href="./kampongchnang.html">កំពង់ឆ្នាំង</a>
+                <a href="./pursat.html">ពោធិ៍សាត់</a>
+                <a href="./battambong.html">បាត់ដំបង់</a>
+                <a href="./pailin.html">ប៉ៃលិន</a>
+                <a href="./banteay meanchey.html">បន្ទាយមានជ័យ</a>
+                <a href="./siemreap.html">សៀមរាប</a>
+                <a href="./kampong Thom.html">កំពង់ធំ</a>
+                <a href="./kampongcham.html">កំពង់ចាម</a>
+                <a href="./preyveng.html">ព្រៃវែង</a>
+                <a href="./svay rieng.html">ស្វាយរៀង</a>
+                <a href="./takeo.html">តាកែវ</a>
+                <a href="./kandal.html">កណ្តាល</a>
+                <a href="./kampongspeu.html">កំពង់ស្ពឺ</a>
+                <a href="./kratie.html">ក្រចេះ</a>
+                <a href="./stung treng.html">ស្ទឹងត្រែង</a>
+                <a href="./mondulkiri.html">មណ្ឌលគីរី</a>
+                <a href="./preah vihear.html">ព្រះវិហារ</a>
+                <a href="./ratanakiri.html">រតនៈគីរី</a>
+                <a href="./koh kong.html">កោះកុង</a>
+                <a href="./oddar meanchey.html">ឧត្តរមានជ័យ</a>
+                <a href="./tbong khmum.html">ត្បូងឃ្មុំ</a>
+                <a href="./sihanoukvill.html">ព្រះសីហនុ</a>
+                
+                
+            </center>
+          </div>
+          
+          
+        </div>
+    </center>
+    
+
+        <div class="welcome">
+            <p>សូមស្វាគមន៍មកកកាន់<br>ខេត្តកំពត</p>
+            <div class="nampro">
+                
+                <img src="./img/kampot.jpg" alt="">
+            </div>
+        </div>
+        <center>
+            <div class="indro">
+                <p>ខាងក្រោមនេះអ្នកនឹងអាចយល់ដឹងអំពីព័ត៌មានក្នុងខេត្តកំពត</p>
+            </div>
+        </center>
+        <center>
+
+            <div class="info1">
+                 
+               <div class="list">
+                    <span style="font-family: Khmer HUYSAVY R;color: white;"><p id="meteka" ><u>មាតិការ</u></p></span>
+                    <a href="#a"><p>១.ប្រវតិ្តខេត្តកំពត............................................................................................។</p></a>
+                    <a href="#b"><p>២.ទីតាំងភូមិសាស្ត្រ.........................................................................................។</p></a>
+                    <a href="#c"><p>៣.ប្រជាជន និងវប្បធម៌..................................................................................។</p></a>
+                    <a href="#d"><p>៤.ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ................................................................។</p></a>
+                    <a href="#e"><p>៥.ការអប់រំ និងស្ថាប័នសិក្សា...........................................................................។</p></a>
+                    <a href="#f"><p>៦.សេដ្ឋកិច្ច........................................................................................................។</p></a>
+                    <a href="#g"><p>៧.ទេសចរណ៍...................................................................................................។</p></a>
+                    <a href="#h"><p>៨.ការអភិវឌ្ឍនាអនាគត..................................................................................។</p></a>
+               </div>
+                
+            </div>
+            
+        </center>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="a">ប្រវតិ្តខេត្តកំពត</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/hkp.jpg" alt="">
+                    <span><p align="justify">ខេត្ត កំពត គឺជាខេត្តមួយមានប្រវត្តិយូរមកពីសម័យអាណានិគមបារាំង។ កំពតត្រូវបានគេស្គាល់ថាជាមជ្ឈមណ្ឌលសេដ្ឋកិច្ច និងរដ្ឋបាលសំខាន់ នៅសម័យបារាំង ដែលបានសាងសង់អគារជាច្រើនបែបអឺរ៉ុបនៅទីក្រុង។ ខេត្តនេះមានឈ្មោះល្បីក្នុងការផលិត ម្ទេសកំពត ដែលជាទំនិញនាំចេញពិភពលោក។ កំពតក៏ជាទីកន្លែងមានប្រវត្តិសាស្ត្រទាក់ទងនឹងសង្គ្រាម និងអង្គការទំនើបនានា នៅសម័យកន្លងមក។ សព្វថ្ងៃ កំពតក្លាយជាគោលដៅទេសចរណ៍ដែលរួមបញ្ចូលទាំងប្រវត្តិសាស្ត្រ ធម្មជាតិ និងស្ថាបត្យកម្មបុរាណ។</p></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="b">ទីតាំងភូមិសាស្ត្រ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត កំពត ស្ថិតនៅភាគនិរតីនៃប្រទេសកម្ពុជា មានចម្ងាយប្រហែល ១៤៨ គីឡូម៉ែត្រ ពីរាជធានីភ្នំពេញ។ ខេត្តនេះមានព្រំប្រទល់ទិសខាងកើតជាប់ខេត្តកោះកុង និងខេត្តកែប, ខាងលិចជាប់ខេត្តកណ្ដាល និងកំពង់ស្ពឺ, ខាងជើងជាប់ខេត្តតាកែវ, ខាងត្បូងជាប់ឆ្នេរសមុទ្រថៃ។ ទីតាំងភូមិសាស្ត្រនេះធ្វើឲ្យកំពតមានទេសភាពចម្រុះ រួមទាំងភ្នំដងរែក, ភ្នំបូកគោ, ទន្លេកំពត និងឆ្នេរសមុទ្រដ៏ស្រស់ស្អាត។ ការស្ថិតនៅជិតឆ្នេរធ្វើឲ្យកំពតមានអត្ថប្រយោជន៍ក្នុងទេសចរណ៍ កសិកម្ម និងពាណិជ្ជកម្មជាមួយតំបន់ជិតខាង។</p></span>
+                    <img src="./img/mapkp.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="c">ប្រជាជន និងវប្បធម៌</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/ppkp.jpeg" alt="">
+                    <span><p align="justify">ខេត្ត កំពត មានប្រជាជនជាង ៦០ម៉ឺននាក់ ដែលភាគច្រើនជាជនជាតិខ្មែរ និងជាពុទ្ធសាសនិក។ ក្រៅពីនេះ ក៏មានសហគមន៍ជនជាតិចិន វៀតណាម និងជនជាតិដើមភាគតិចផ្សេងៗ ដែលរស់នៅជាមួយគ្នាដោយមានសន្តិភាព។ វប្បធម៌កំពតបង្ហាញពីប្រពៃណីជីវិតជនបទ ដូចជា ការធ្វើស្រែ ការចិញ្ចឹមជ្រូកមាន់ និងការនេសាទតាមទន្លេ។ ពិធីបុណ្យប្រពៃណីដូចជា បុណ្យចូលឆ្នាំខ្មែរ បុណ្យភ្ជុំបិណ្ឌ និងបុណ្យអុំទូក តែងតែអញ្ជើញឲ្យប្រជាពលរដ្ឋ និងភ្ញៀវទេសចរចូលរួមយ៉ាងសប្បាយរីករាយ។ ទីក្រុងកំពត និងសហគមន៍ជុំវិញក៏មានសិល្បៈ បទភ្លេង និងអាហារប្រពៃណី ដែលក្លាយជាស្នាដៃសំខាន់ក្នុងការទាក់ទាញភ្ញៀវទេសចរផងដែរ។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="d">ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/archkp.jpg" alt="">
+                    <span><p align="justify">ខេត្ត កំពត មានស្ថាបត្យកម្មចម្រុះ ដែលបង្ហាញពីរបៀបរស់នៅ និងប្រវត្តិសាស្ត្ររបស់ទីក្រុងតាមយុគសម័យ។ នៅទីក្រុងកំពត អ្នកអាចឃើញអគារបែបអាណានិគមបារាំងជាច្រើន ដែលនៅសល់តាំងពីសតវត្សទី១៩ ដូចជា ផ្ទះបាយ អគាររដ្ឋបាល និងសាលារាជធានីកាលនោះ។ សំណង់ទាក់ទាញទេសចរណ៍រួមមាន ព្រះវិហារវត្តត្រីគោ និង ព្រះវិហារវត្តអំពិលប្រាំ ដែលជាកន្លែងសក្ការបូជាសំខាន់ៗ។ លើសពីនេះ នៅលើ ភ្នំបូកគោ មានសំណង់បុរាណសាងសង់តាំងពីសម័យបារាំង ដូចជា វិហារខ្ពស់ និងសណ្ឋាគារបូកគោ ដែលសព្វថ្ងៃក្លាយជាគោលដៅទេសចរណ៍ពេញនិយម។ ស្ថាបត្យកម្មទាំងនេះបង្ហាញពីការលាយបញ្ចូលប្រពៃណីខ្មែរ និងឥទ្ធិពលបារាំង។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="e">ការអប់រំ និងស្ថាប័នសិក្សា</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត កំពត មានប្រព័ន្ធអប់រំចាប់ពីកម្រិតបឋមសិក្សា រហូតដល់អនុវិទ្យាល័យ និងវិទ្យាល័យ ដែលបម្រើការសិក្សារបស់កុមារ និងយុវជនក្នុងតំបន់។ នៅទីក្រុងកំពត មានសាខាសាកលវិទ្យាល័យ និងវិទ្យាស្ថានជាច្រើន ដូចជា សាកលវិទ្យាល័យប៊ូធីសាស្ត្រ, សាកលវិទ្យាល័យបៀលប្រាយ និងវិទ្យាស្ថានបណ្តុះបណ្តាលវិជ្ជាជីវៈ។ ការអប់រំក្នុងខេត្តកំពតផ្តោតលើការផ្តល់ឱកាសសិក្សាដល់កុមារទាំងអស់ ដោយមានការគាំទ្រពីអង្គការមូលនិធិ និងអង្គការមិនមែនរដ្ឋាភិបាល (NGOs)។ ក្រៅពីនេះ ការបណ្តុះបណ្តាលជំនាញវិជ្ជាជីវៈ ដូចជា កសិកម្ម ទេសចរណ៍ និងជំនាញបច្ចេកទេស ត្រូវបានអភិវឌ្ឍ ដើម្បីឆ្លើយតបទៅតាមតម្រូវការទីផ្សារការងារ។</p></span>
+                    <img src="./img/stkp.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+           <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="f">សេដ្ឋកិច្ច</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">សេដ្ឋកិច្ចរបស់ខេត្ត កំពត មានមូលដ្ឋានលើ កសិកម្ម, នេសាទ, និង ទេសចរណ៍ ជាចម្បង។ កំពតល្បីលើផលិតផល ម្ទេសកំពត ដែលត្រូវបានទទួលស្គាល់ជាសកល និងមានតម្លៃខ្ពស់នៅទីផ្សារបរទេស។ ក្រៅពីនេះ ការដាំដំណាំផ្សេងៗដូចជា ស្រូវ ផ្លែឈើ និងការចិញ្ចឹមជ្រូកមាន់ ក៏ជួយបង្កើតចំណូលសម្រាប់ប្រជាជន។ វិស័យនេសាទតាមទន្លេ និងឆ្នេរខេត្តកំពតក៏មានសារៈសំខាន់ក្នុងការផ្គត់ផ្គង់អាហារនិងចិញ្ចឹមជីវភាព។ ភាគច្រើននៃសេដ្ឋកិច្ចកំពតកំពុងពឹងផ្អែកលើ ទេសចរណ៍អេកូ ដូចជា ភ្នំបូកគោ ទន្លេកំពត និងឆ្នេរប្រណីត ដែលទាក់ទាញភ្ញៀវទេសចរជាច្រើន។ ការវិនិយោគពីឯកជន និងបរទេសក៏ជួយជំរុញឲ្យសេដ្ឋកិច្ចកំពតមានការរីកចម្រើនជាបន្តបន្ទាប់។</p></span>
+                    <img src="./img/ecokp.png" alt="">
+                </div>
+
+            </div>
+         </div>
+          <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="g">ទេសចរណ៍</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/tkp.png" alt="">
+                    <span><p align="justify">ខេត្ត កំពត គឺជាគោលដៅទេសចរណ៍ដ៏ពេញនិយម ដែលរួមបញ្ចូលទាំងធម្មជាតិ ស្ថាបត្យកម្ម និងវប្បធម៌។ ភ្នំបូកគោ ជាទីកន្លែងល្បី ដែលមានអាកាសធាតុត្រជាក់ និងសំណង់បែបអាណានិគមបារាំង។ ទន្លេកំពត ក៏ជាទីកន្លែងសំខាន់សម្រាប់ការធ្វើទេសចរណ៍ទូក និងកម្សាន្តតាមឆ្នេរទន្លេ។ កំពតក៏មានឆ្នេរសមុទ្រដ៏ស្រស់ស្អាត ជាពិសេសតំបន់ជិតកែប ដែលមានទេសភាពសមុទ្រស្រស់បំព្រង។ លើសពីនេះ កសិដ្ឋានម្ទេស និងកសិដ្ឋានផ្លែឈើ ក៏ក្លាយជាកន្លែងទាក់ទាញភ្ញៀវទេសចរដើម្បីស្គាល់ពីជីវភាពជនបទ។ ទេសចរណ៍កំពតជួយផ្តល់ចំណូលដល់ប្រជាជន និងជំរុញឱ្យខេត្តមានការរីកចម្រើនយ៉ាងចម្រុះ។</p></span>
+                </div>
+
+            </div>
+        </div>
+          <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="h">ការអភិវឌ្ឍនាអនាគត</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត កំពត ត្រូវបានកំណត់ជាតំបន់អភិវឌ្ឍសំខាន់មួយរបស់កម្ពុជា ដោយផ្តោតលើ ទេសចរណ៍អេកូ, កសិកម្មស្តង់ដារអន្តរជាតិ, និង វិនិយោគឧស្សាហកម្មស្រាល។ រដ្ឋាភិបាលមានគម្រោងអភិវឌ្ឍហេដ្ឋារចនាសម្ព័ន្ធ ដូចជា ផ្លូវជាតិ ទំនប់ និងប្រព័ន្ធភ្លើងទំនើប ដើម្បីគាំទ្រការធ្វើដំណើរ និងដឹកជញ្ជូនទំនិញ។ ការអភិវឌ្ឍឆ្នេរ កំពង់ផែ និងតំបន់កែប-កំពត ត្រូវបានគេសង្កេតថា អាចក្លាយជាមជ្ឈមណ្ឌលទេសចរណ៍ឆ្នេរសកល។ ក្រៅពីនេះ កំពតក៏កំពុងទទួលការចាប់អារម្មណ៍ពីវិនិយោគិនបរទេសក្នុងវិស័យអចលនទ្រព្យ និងសណ្ឋាគារ។ ទិសដៅអនាគតនៃកំពត គឺក្លាយជាតំបន់អភិវឌ្ឍសេដ្ឋកិច្ច-ទេសចរណ៍បៃតង ដែលបន្សល់ទុកអត្តសញ្ញាណវប្បធម៌ និងធម្មជាតិដ៏ស្រស់ស្អាត។</p></span>
+                    <img src="./img/dkp.png" alt="">
+                </div>
+
+            </div>
+         </div>
+
+        
+</body>
+</html>

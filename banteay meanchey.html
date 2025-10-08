@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banteay meanchey</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+       scroll-behavior: smooth;
+      /* scroll-behavior: smooth; */
+    }
+   
+    body {
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      
+      background-image: url(./img/—Pngtree—kbach\ khmer-pattern\ cambodia_1293616.jpg);
+      background-repeat: no-repeat;
+    
+     background-size: cover;
+        
+    }
+    .info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+     & img{
+      width: 50px;
+      margin-left: 20px;
+      object-fit: cover;
+     }
+     & p{
+      place-content: center;
+      margin-top: 15px;
+      font-family: Kh Ang PhkayProek;
+      font-size: 20px;
+     }
+      & a{
+        color: bisque;
+        text-decoration: none;
+      }
+
+
+   }
+   .text {
+     
+      background-color: rgba(255, 255, 255, 0.245);
+      width: 920px;
+      height: 150px;
+      
+      border-radius: 30px;
+      border: solid 3px rgb(228, 6, 6);
+      
+      margin-top: 20px;
+      & .pro {
+       place-content: center;
+      
+      padding-top: 35px;
+      
+       & a{
+        margin-left: 10px;
+        color: rgb(16, 4, 4);
+        font-size: 20px;
+        font-family: Kh Baphnom SnehRean;
+        
+       }
+      }
+    }
+     .BAR{
+            width: 100%;
+           
+            font-size: 20px;
+            font-family: Kh Ang Samnadaichas;
+            color: white;
+            & marquee{
+              position: fixed;
+              bottom: 0;
+            }
+        }
+    .welcome{
+        width: 100%;
+        height: 500px;
+        
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        place-items: center;
+            & p{
+                text-align: center;
+                font-size: 65px;
+                font-family: Khmer HUYSAVY R;
+                color: rgb(36, 77, 189);
+            }
+       
+         & .namepro{
+            width: auto;
+            height: auto;
+            
+        }
+        & img{
+           width: 450px;
+           height: 450px;
+           object-fit: cover;
+           margin-left: 20%;
+           border-radius: 20px 50px;
+           border: solid 2px white;
+           box-shadow: rgba(204, 198, 198, 0.25) 0px 14px 28px, rgba(228, 221, 221, 0.22) 0px 10px 10px;
+        }
+    }
+    .indro{
+        width: auto;
+        height: auto;
+        
+        & p{
+            width: 800px;
+            place-content: center;
+            border-radius: 50px 50px 0px 0px;
+            height: 100px;
+            background-color: rgb(70, 15, 5);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:AKbalthom Kbach ;
+            box-shadow: rgba(230, 225, 225, 0.19) 0px 10px 20px, rgba(234, 232, 232, 0.23) 0px 6px 6px;
+        }
+    }
+    .info1{
+        width: auto;
+        height: auto;
+           
+        
+        & .list{
+            width: 800px;
+            
+           
+            height: 550px;
+            background-color: rgba(137, 43, 226, 0.37);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:Kh OreangOv Thmey;
+             border-radius: 0px 0px 50px 50px;
+             box-shadow: rgba(239, 234, 234, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+             & a{
+                color: beige;
+                text-decoration: none;
+             }
+        }
+    }
+    .explain{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(250, 235, 215, 0.384);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex2{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                        
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-right: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex1{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(212, 140, 16);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+     .explain1{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex1{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.312);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex22{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                       
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-left: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex12{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(223, 15, 15);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+    .top{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      & img{
+        width: 70px;
+        margin-bottom: 30px;
+      }
+    }
+</style>
+<body>
+    <div class="top">
+     <a href="#"><img src="./img/top.png" alt="">
+    </div>
+     <div class="BAR">
+      <marquee bgcolor="red" 
+      onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">និស្សិតឈ្មោះ: លី សីហៈ ក្រុម SW34 ជំនាន់ទី 23 ឆ្នាំទី 1 ឆមាសទី 2 មុខវិជ្ជា WD I បង្រៀនដោយ លោកគ្រូ រី វិសាន  នៃ វិទ្យាស្ថានស៊ីតិក || Project Map</marquee>
+
+    </div>
+     </center>
+    
+      <div class="info">
+        
+
+         <a href="./home.html"><img id="home" src="./img/12249422.png" alt=""></a> 
+          <a href="./home.html"><p>ទំព័រដើម</p></a>
+         <a href="./contact.html"><img id="ct" src="./img/3237155-200.png" alt=""></a> 
+          <a href="./contact.html"><p>ទំនាក់ទំនង</p></a>
+      </div>
+    
+    <center>
+
+        <div class="text">
+          <div class="pro">
+            <center>
+    
+                  <a href="./phnompenh.html">រាជធានីភ្នំពេញ</a>
+                <a href="./kampot.html">កំពត</a>
+                <a href="./kep.html">កែប</a>
+                <a href="./kampongchnang.html">កំពង់ឆ្នាំង</a>
+                <a href="./pursat.html">ពោធិ៍សាត់</a>
+                <a href="./battambong.html">បាត់ដំបង់</a>
+                <a href="./pailin.html">ប៉ៃលិន</a>
+                <a href="./banteay meanchey.html">បន្ទាយមានជ័យ</a>
+                <a href="./siemreap.html">សៀមរាប</a>
+                <a href="./kampong Thom.html">កំពង់ធំ</a>
+                <a href="./kampongcham.html">កំពង់ចាម</a>
+                <a href="./preyveng.html">ព្រៃវែង</a>
+                <a href="./svay rieng.html">ស្វាយរៀង</a>
+                <a href="./takeo.html">តាកែវ</a>
+                <a href="./kandal.html">កណ្តាល</a>
+                <a href="./kampongspeu.html">កំពង់ស្ពឺ</a>
+                <a href="./kratie.html">ក្រចេះ</a>
+                <a href="./stung treng.html">ស្ទឹងត្រែង</a>
+                <a href="./mondulkiri.html">មណ្ឌលគីរី</a>
+                <a href="./preah vihear.html">ព្រះវិហារ</a>
+                <a href="./ratanakiri.html">រតនៈគីរី</a>
+                <a href="./koh kong.html">កោះកុង</a>
+                <a href="./oddar meanchey.html">ឧត្តរមានជ័យ</a>
+                <a href="./tbong khmum.html">ត្បូងឃ្មុំ</a>
+                <a href="./sihanoukvill.html">ព្រះសីហនុ</a>
+                
+            </center>
+          </div>
+          
+          
+        </div>
+    </center>
+    
+
+        <div class="welcome">
+            <p>សូមស្វាគមន៍មកកកាន់<br>ខេត្តបន្ទាយមានជ័យ</p>
+            <div class="nampro">
+                
+                <img src="./img/bontey meanchey.jpg" alt="">
+            </div>
+        </div>
+        <center>
+            <div class="indro">
+                <p>ខាងក្រោមនេះអ្នកនឹងអាចយល់ដឹងអំពីព័ត៌មានក្នុងខេត្តបន្ទាយមានជ័យ</p>
+            </div>
+        </center>
+        <center>
+
+            <div class="info1">
+                 
+               <div class="list">
+                    <span style="font-family: Khmer HUYSAVY R;color: white;"><p id="meteka" ><u>មាតិការ</u></p></span>
+                    <a href="#a"><p>១.ប្រវតិ្តខេត្តបន្ទាយមានជ័យ..........................................................................។</p></a>
+                    <a href="#b"><p>២.ទីតាំងភូមិសាស្ត្រ.........................................................................................។</p></a>
+                    <a href="#c"><p>៣.ប្រជាជន និងវប្បធម៌..................................................................................។</p></a>
+                    <a href="#d"><p>៤.ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ................................................................។</p></a>
+                    <a href="#e"><p>៥.ការអប់រំ និងស្ថាប័នសិក្សា...........................................................................។</p></a>
+                    <a href="#f"><p>៦.សេដ្ឋកិច្ច........................................................................................................។</p></a>
+                    <a href="#g"><p>៧.ទេសចរណ៍...................................................................................................។</p></a>
+                    <a href="#h"><p>៨.ការអភិវឌ្ឍនាអនាគត..................................................................................។</p></a>
+               </div>
+                
+            </div>
+            
+        </center>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="a">ប្រវតិ្តខេត្តបន្ទាយមានជ័យ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/hbm.jpg" alt="">
+                    <span><p align="justify">ខេត្ត បន្ទាយមានជ័យ មានទីតាំងនៅភាគខាងលិចនៃប្រទេសកម្ពុជា និងជាព្រំដែនជាប់ប្រទេសថៃ។ ខេត្តនេះត្រូវបានបង្កើតជាផ្លូវការនៅឆ្នាំ ១៩៦៤ ដោយកន្លងមកតំបន់នេះគឺជាតំបន់ព្រំដែនសំខាន់សម្រាប់យោធា និងពាណិជ្ជកម្ម។ ប្រវត្តិសាស្ត្រខេត្តបន្ទាយមានជ័យក៏ទាក់ទងជាមួយសង្គ្រាម និងការផ្លាស់ប្តូររដ្ឋាភិបាលក្នុងសម័យខ្មែរក្រហម និងក្រោយសង្គ្រាម។ បន្ទាយមានជ័យបានរីកចម្រើនយ៉ាងសំខាន់ក្នុងវិស័យកសិកម្ម និងពាណិជ្ជកម្មក្រោមការគាំទ្ររដ្ឋាភិបាល។ សព្វថ្ងៃ ខេត្តក្លាយជាតំបន់មានសក្តានុពលសម្រាប់ទេសចរណ៍ព្រំដែន និងអភិវឌ្ឍសេដ្ឋកិច្ចក្នុងអនាគត។</p></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="b">ទីតាំងភូមិសាស្ត្រ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត បន្ទាយមានជ័យ ស្ថិតនៅភាគខាងលិចនៃប្រទេសកម្ពុជា មានព្រំប្រទល់ជាប់ប្រទេស ថៃ ខាងលិច។ ខេត្តនេះមានភូមិសាស្ត្រដែលប្រកបដោយ ភ្នំ, ព្រៃ, និងទន្លេ ជាច្រើន។ ភាគខាងជើង និងខាងកើតជាប់ខេត្ត សៀមរាប និង កំពង់ស្ពឺ, ខាងត្បូងជាប់ខេត្ត កណ្ដាល និងខេត្ត ប៉ៃលិន។ ទីតាំងភូមិសាស្ត្រប៉ុណ្ណោះធ្វើឲ្យបន្ទាយមានជ័យមានសក្តានុពលក្នុងការអភិវឌ្ឍ កសិកម្មស្រែធំ, ទេសចរណ៍ធម្មជាតិ, និង ពាណិជ្ជកម្មតាមព្រំដែន។</p></span>
+                    <img src="./img/mapbm.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="c">ប្រជាជន និងវប្បធម៌</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/ppbm.jpg" alt="">
+                    <span><p align="justify">ខេត្ត បន្ទាយមានជ័យ មានប្រជាជនប្រមាណ ១០០,០០០–១៥០,០០០នាក់ ភាគច្រើនជាជនជាតិខ្មែរ និងជាពុទ្ធសាសនិក។ ក៏មានសហគមន៍ជនជាតិភាគតិច ដូចជា ចិន និងជនជាតិដើមខេត្តផ្សេងៗ។ វប្បធម៌បន្ទាយមានជ័យផ្អែកលើ ប្រពៃណីជីវិតជនបទ ដូចជា ការធ្វើស្រែ, ការនេសាទ, និងសិល្បៈប្រពៃណីខ្មែរ។ ពិធីបុណ្យប្រពៃណីដូចជា បុណ្យចូលឆ្នាំខ្មែរ និង បុណ្យភ្ជុំបិណ្ឌ តែងតែទាក់ទាញប្រជាជនក្នុងតំបន់ និងភ្ញៀវទេសចរដើម្បីចូលរួម។ ក្រៅពីនេះ អាហារប្រពៃណី និងផលិតផលស្រុកដូចជា ផ្លែឈើ និងត្រីទន្លេក៏ជាផ្នែកសំខាន់នៃវប្បធម៌ក្នុងខេត្ត។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="d">ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/archbm.jpg" alt="">
+                    <span><p align="justify">ខេត្ត បន្ទាយមានជ័យ មានស្ថាបត្យកម្ម និងសំណង់ដែលភ្ជាប់បែបប្រពៃណីខ្មែរជាមួយអនុស្សាវរីយ៍សម័យអាណានិគម។ នៅទីនេះ អ្នកអាចឃើញ វត្តបុរាណ និង ប្រាសាទតូចៗ ដែលប្រជាជនកាន់កាប់ និងបូជា។ ក៏មានផ្ទះល្វែងបុរាណ និងសំណង់រដ្ឋបាលដែលនៅសល់ពីសម័យកន្លងមក។ ទេសចរណ៍ក៏អាចទស្សនាសំណង់សណ្ឋាគារ និងសេវាកម្មទេសចរណ៍តាមឆ្នេរ និងទន្លេ។ ស្ថាបត្យកម្ម និងសំណង់ទាំងនេះបង្ហាញពីការរួមបញ្ចូលអត្តសញ្ញាណវប្បធម៌ខ្មែរ និងឥទ្ធិពលបរទេសដែលនៅសល់ពីសម័យកន្លងមក។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="e">ការអប់រំ និងស្ថាប័នសិក្សា</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត បន្ទាយមានជ័យ មានប្រព័ន្ធអប់រំចាប់ពីកម្រិតបឋមសិក្សា រហូតដល់វិទ្យាល័យ និងមជ្ឈមណ្ឌលបណ្តុះបណ្តាលវិជ្ជាជីវៈ។ សាលារៀនសាធារណៈ និងឯកជនក្នុងខេត្តផ្តល់ឱកាសសិក្សារសម្រាប់កុមារ និងយុវជនទាំងក្នុងទីក្រុង និងតំបន់ជនបទ។ ការអប់រំផ្តោតលើ កសិកម្ម, វិជ្ជាជីវៈ, និងជំនាញសម្រាប់ការងារ ដើម្បីឆ្លើយតបទៅតាមតម្រូវការសេដ្ឋកិច្ចក្នុងតំបន់។ ក៏មានវិទ្យាស្ថានឯកជន និងសាកលវិទ្យាល័យខ្លះ ដែលផ្តល់ជំនាញទាន់សម័យ និងសមត្ថភាពប្រកបដោយវិជ្ជាជីវៈ។ ការអប់រំនេះទទួលបានការគាំទ្រពីអង្គការមូលនិធិ និង NGOs ដើម្បីធានាឱ្យយុវជនមានឱកាសសិក្សាទាំងស្មើស្មើ។</p></span>
+                    <img src="./img/stbm.jpeg" alt="">
+                </div>
+
+            </div>
+         </div>
+           <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="f">សេដ្ឋកិច្ច</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">សេដ្ឋកិច្ចខេត្ត បន្ទាយមានជ័យ មានមូលដ្ឋានលើ កសិកម្ម, ពាណិជ្ជកម្មតាមព្រំដែន, និងសេវាកម្មទេសចរណ៍។ កសិកម្មផ្តោតលើការដាំ ស្រូវ, សណ្តែក, បន្លែ, និងផ្លែឈើ, ផ្គត់ផ្គង់ទីផ្សារផ្ទៃក្នុង និងនាំចេញក្រៅប្រទេស។ ភាគច្រើននៃប្រជាជនពឹងផ្អែកលើកសិកម្ម និងការចិញ្ចឹមសត្វសម្រាប់ចំណូលប្រចាំថ្ងៃ។ ទេសចរណ៍តាមទន្លេ និងតំបន់ធម្មជាតិជួយបន្ថែមចំណូលសម្រាប់សេវាកម្ម និងសណ្ឋាគារ។ ការវិនិយោគពីឯកជន និងបរទេសក៏ជួយលើកស្ទើរសេដ្ឋកិច្ចក្នុងខេត្តឲ្យមានភាពរីកចម្រើនចម្រុះ និងស្ថាពរ។</p></span>
+                    <img src="./img/ecobm.png" alt="">
+                </div>
+
+            </div>
+         </div>
+          <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="g">ទេសចរណ៍</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/tbm.jpg" alt="">
+                    <span><p align="justify">ខេត្ត បន្ទាយមានជ័យ មានទីតាំងស្រស់ស្អាត និងធម្មជាតិសម្បូរបែប ដែលទាក់ទាញភ្ញៀវទេសចរពីក្នុងប្រទេស និងក្រៅប្រទេស។ ទេសចរណ៍ក្នុងខេត្តផ្អែកលើ ទន្លេ, ភ្នំ, និងព្រៃធំ ដែលអាចធ្វើសកម្មភាពដូចជា ទូកកំសាន្ត, ដើររត់, និងកម្សាន្តធម្មជាតិ។ ក៏មាន វត្តបុរាណ និងប្រាសាទតូចៗ ដែលទាក់ទាញភ្ញៀវទេសចរដើម្បីស្វែងយល់ពីវប្បធម៌ និងប្រវត្តិសាស្ត្របុរាណ។ ទេសចរណ៍ក៏ជួយបង្កើនចំណូលសម្រាប់ប្រជាជនក្នុងខេត្ត និងជំរុញឲ្យសេដ្ឋកិច្ចក្នុងតំបន់មានភាពរីកចម្រើន។</p></span>
+                </div>
+
+            </div>
+        </div>
+          <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="h">ការអភិវឌ្ឍនាអនាគត</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត បន្ទាយមានជ័យ មានផែនការអភិវឌ្ឍអនាគតដែលផ្តោតលើ កសិកម្មទំនើប, ទេសចរណ៍ធម្មជាតិ, និងហេដ្ឋារចនាសម្ព័ន្ធទំនើប។ រដ្ឋាភិបាលមានគម្រោងកែលម្អផ្លូវជាតិ និងបណ្ដាញចរាចរណ៍ ដើម្បីភ្ជាប់ទីក្រុងនិងស្រុកជិតខាង, ជំរុញពាណិជ្ជកម្ម និងដឹកជញ្ជូនទំនិញ។ ការអភិវឌ្ឍទេសចរណ៍ផ្តោតលើការពារបរិស្ថាន និងធម្មជាតិ ដើម្បីរក្សាទេសភាពទន្លេ, ភ្នំ និងព្រៃឲ្យស្អាត។ ការវិនិយោគពីឯកជន និងបរទេសក៏នាំឱកាសកាន់តែច្រើនក្នុងវិស័យសេវាកម្ម និងសណ្ឋាគារ។ ទិសដៅអនាគតនៃខេត្តបន្ទាយមានជ័យ គឺក្លាយជាតំបន់អភិវឌ្ឍសេដ្ឋកិច្ច និងទេសចរណ៍ប្រកបដោយចម្រុះ និងស្ថាពរ។</p></span>
+                    <img src="./img/dbm.png" alt="">
+                </div>
+
+            </div>
+         </div>
+
+        
+</body>
+</html>

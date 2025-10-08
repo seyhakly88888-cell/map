@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tbong khmum</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* scroll-behavior: smooth; */
+    }
+    html,body{
+      scroll-behavior: smooth;
+    }
+    body {
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      
+      background-image: url(./img/—Pngtree—kbach\ khmer-pattern\ cambodia_1293616.jpg);
+      background-repeat: no-repeat;
+    
+     background-size: cover;
+        
+    }
+    .info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+     & img{
+      width: 50px;
+      margin-left: 20px;
+      object-fit: cover;
+     }
+     & p{
+      place-content: center;
+      margin-top: 15px;
+      font-family: Kh Ang PhkayProek;
+      font-size: 20px;
+     }
+      & a{
+        color: bisque;
+        text-decoration: none;
+      }
+
+
+   }
+   .text {
+     
+      background-color: rgba(255, 255, 255, 0.245);
+      width: 920px;
+      height: 150px;
+      
+      border-radius: 30px;
+      border: solid 3px rgb(228, 6, 6);
+      
+      margin-top: 20px;
+      & .pro {
+       place-content: center;
+      
+      padding-top: 35px;
+      
+       & a{
+        margin-left: 10px;
+        color: rgb(16, 4, 4);
+        font-size: 20px;
+        font-family: Kh Baphnom SnehRean;
+        
+       }
+      }
+    }
+     .BAR{
+            width: 100%;
+           
+            font-size: 20px;
+            font-family: Kh Ang Samnadaichas;
+            color: white;
+            & marquee{
+              position: fixed;
+              bottom: 0;
+            }
+        }
+    .welcome{
+        width: 100%;
+        height: 500px;
+        
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        place-items: center;
+            & p{
+                text-align: center;
+                font-size: 65px;
+                font-family: Khmer HUYSAVY R;
+                color: rgb(36, 77, 189);
+            }
+       
+         & .namepro{
+            width: auto;
+            height: auto;
+            
+        }
+        & img{
+           width: 450px;
+           height: 450px;
+           object-fit: cover;
+           margin-left: 20%;
+           border-radius: 20px 50px;
+           border: solid 2px white;
+           box-shadow: rgba(204, 198, 198, 0.25) 0px 14px 28px, rgba(228, 221, 221, 0.22) 0px 10px 10px;
+        }
+    }
+    .indro{
+        width: auto;
+        height: auto;
+        
+        & p{
+            width: 800px;
+            place-content: center;
+            border-radius: 50px 50px 0px 0px;
+            height: 100px;
+            background-color: rgb(70, 15, 5);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:AKbalthom Kbach ;
+            box-shadow: rgba(230, 225, 225, 0.19) 0px 10px 20px, rgba(234, 232, 232, 0.23) 0px 6px 6px;
+        }
+    }
+    .info1{
+        width: auto;
+        height: auto;
+           
+        
+        & .list{
+            width: 800px;
+            
+           
+            height: 550px;
+            background-color: rgba(137, 43, 226, 0.37);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:Kh OreangOv Thmey;
+             border-radius: 0px 0px 50px 50px;
+             box-shadow: rgba(239, 234, 234, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+             & a{
+                color: beige;
+                text-decoration: none;
+             }
+        }
+    }
+    .explain{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(250, 235, 215, 0.384);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex2{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                        
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-right: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex1{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(212, 140, 16);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+     .explain1{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex1{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.312);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex22{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                       
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-left: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex12{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(223, 15, 15);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+    .top{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      & img{
+        width: 70px;
+        margin-bottom: 30px;
+      }
+    }
+</style>
+<body>
+    <div class="top">
+     <a href="#"><img src="./img/top.png" alt="">
+    </div>
+     <div class="BAR">
+      <marquee bgcolor="red" 
+      onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">និស្សិតឈ្មោះ: លី សីហៈ ក្រុម SW34 ជំនាន់ទី 23 ឆ្នាំទី 1 ឆមាសទី 2 មុខវិជ្ជា WD I បង្រៀនដោយ លោកគ្រូ រី វិសាន  នៃ វិទ្យាស្ថានស៊ីតិក || Project Map</marquee>
+
+    </div>
+     </center>
+    
+      <div class="info">
+        
+
+         <a href="./home.html"><img id="home" src="./img/12249422.png" alt=""></a> 
+          <a href="./home.html"><p>ទំព័រដើម</p></a>
+         <a href="./contact.html"><img id="ct" src="./img/3237155-200.png" alt=""></a> 
+          <a href="./contact.html"><p>ទំនាក់ទំនង</p></a>
+      </div>
+    
+    <center>
+
+        <div class="text">
+          <div class="pro">
+            <center>
+    
+                <a href="./phnompenh.html">រាជធានីភ្នំពេញ</a>
+                <a href="./kampot.html">កំពត</a>
+                <a href="./kep.html">កែប</a>
+                <a href="./kampongchnang.html">កំពង់ឆ្នាំង</a>
+                <a href="./pursat.html">ពោធិ៍សាត់</a>
+                <a href="./battambong.html">បាត់ដំបង់</a>
+                <a href="./pailin.html">ប៉ៃលិន</a>
+                <a href="./banteay meanchey.html">បន្ទាយមានជ័យ</a>
+                <a href="./siemreap.html">សៀមរាប</a>
+                <a href="./kampong Thom.html">កំពង់ធំ</a>
+                <a href="./kampongcham.html">កំពង់ចាម</a>
+                <a href="./preyveng.html">ព្រៃវែង</a>
+                <a href="./svay rieng.html">ស្វាយរៀង</a>
+                <a href="./takeo.html">តាកែវ</a>
+                <a href="./kandal.html">កណ្តាល</a>
+                <a href="./kampongspeu.html">កំពង់ស្ពឺ</a>
+                <a href="./kratie.html">ក្រចេះ</a>
+                <a href="./stung treng.html">ស្ទឹងត្រែង</a>
+                <a href="./mondulkiri.html">មណ្ឌលគីរី</a>
+                <a href="./preah vihear.html">ព្រះវិហារ</a>
+                <a href="./ratanakiri.html">រតនៈគីរី</a>
+                <a href="./koh kong.html">កោះកុង</a>
+                <a href="./oddar meanchey.html">ឧត្តរមានជ័យ</a>
+                <a href="./tbong khmum.html">ត្បូងឃ្មុំ</a>
+                <a href="./sihanoukvill.html">ព្រះសីហនុ</a>
+            </center>
+          </div>
+          
+          
+        </div>
+    </center>
+    
+
+        <div class="welcome">
+            <p>សូមស្វាគមន៍មកកកាន់<br>ខេត្តត្បូងឃ្មុំ</p>
+            <div class="nampro">
+                
+                <img src="./img/tboung kmom.jpeg" alt="">
+            </div>
+        </div>
+        <center>
+            <div class="indro">
+                <p>ខាងក្រោមនេះអ្នកនឹងអាចយល់ដឹងអំពីព័ត៌មានក្នុងខេត្តត្បូងឃ្មុំ</p>
+            </div>
+        </center>
+        <center>
+
+            <div class="info1">
+                 
+               <div class="list">
+                    <span style="font-family: Khmer HUYSAVY R;color: white;"><p id="meteka" ><u>មាតិការ</u></p></span>
+                    <a href="#a"><p>១.ប្រវតិ្តខេត្តត្បូងឃ្មុំ.........................................................................................។</p></a>
+                    <a href="#b"><p>២.ទីតាំងភូមិសាស្ត្រ.........................................................................................។</p></a>
+                    <a href="#c"><p>៣.ប្រជាជន និងវប្បធម៌..................................................................................។</p></a>
+                    <a href="#d"><p>៤.ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ................................................................។</p></a>
+                    <a href="#e"><p>៥.ការអប់រំ និងស្ថាប័នសិក្សា...........................................................................។</p></a>
+                    <a href="#f"><p>៦.សេដ្ឋកិច្ច........................................................................................................។</p></a>
+                    <a href="#g"><p>៧.ទេសចរណ៍...................................................................................................។</p></a>
+                    <a href="#h"><p>៨.ការអភិវឌ្ឍនាអនាគត..................................................................................។</p></a>
+               </div>
+                
+            </div>
+            
+        </center>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="a">ប្រវតិ្តខេត្តត្បូងឃ្មុំ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/htb.jpg" alt="">
+                    <span><p align="justify">ខេត្ត ត្បូងឃ្មុំ គឺជាខេត្តថ្មីបំផុតមួយនៅកម្ពុជាដែលបានបង្កើតឡើងនៅឆ្នាំ ២០១៤ តាមរយៈព្រះរាជក្រឹត្យ បែងចែកចេញពីខេត្តកំពង់ចាម។ មុនពេលនោះ តំបន់នេះគឺជាផ្នែកសំខាន់មួយនៃខេត្តកំពង់ចាម ដែលមានប្រជាជនរស់នៅយូរមកហើយ។ ឈ្មោះ “ត្បូងឃ្មុំ” ត្រូវបានដាក់តាមឈ្មោះ ក្រុងត្បូងឃ្មុំ ដែលជាទីរួមខេត្ត។ ប្រវត្តិរបស់ខេត្តនេះពាក់ព័ន្ធនឹងការអភិវឌ្ឍផ្នែកសេដ្ឋកិច្ច កសិកម្ម និងសេវាកម្មថ្មីៗ ដែលបានបន្តជម្រុញឲ្យតំបន់មានការលូតលាស់លឿន។</p></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="b">ទីតាំងភូមិសាស្ត្រ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត ខេត្ត ត្បូងឃ្មុំ ស្ថិតនៅភាគកើតនៃប្រទេសកម្ពុជា មានព្រំប្រទល់ជាប់នឹងប្រទេសវៀតណាមខាងកើត។ ខេត្តនេះមានព្រំប្រទល់ជាមួយខេត្ត កំពង់ចាម ខាងលិច និងខេត្ត ក្រចេះ ខាងជើង។ ទីរួមខេត្តគឺក្រុង ត្បូងឃ្មុំ ដែលមានទីតាំងនៅលើផ្លូវជាតិលេខ៧ ជាផ្លូវសំខាន់ភ្ជាប់ភ្នំពេញទៅមុខទៅវៀតណាម។ ភូមិសាស្ត្រខេត្តនេះភាគច្រើនជាតំបន់ទំនាបស្រស់ស្អាត មានដីសម្រាប់កសិកម្ម និងមានទន្លេតូចៗជាច្រើន ដែលជួយឲ្យប្រជាជនអនុវត្តកសិកម្មបានងាយស្រួល។</p></span>
+                    <img src="./img/maptb.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="c">ប្រជាជន និងវប្បធម៌</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/pptb.jpg" alt="">
+                    <span><p align="justify">ប្រជាជនខេត្ត ត្បូងឃ្មុំ ភាគច្រើនជាជនជាតិខ្មែរ ហើយក៏មានជនជាតិដើមភាគតិចរស់នៅដូចជា ជនជាតិចាម និងវៀត។ ពួកគេរស់នៅក្នុងសហគមន៍ដោយភាពសាមគ្គី។ វប្បធម៌សំខាន់គឺ ពុទ្ធសាសនា ដែលជាដើមកំណើតនៃពិធីបុណ្យប្រពៃណីជាច្រើនដូចជា បុណ្យភ្ជុំបិណ្ឌ និងបុណ្យចូលឆ្នាំខ្មែរ។ ការរស់នៅផ្អែកលើ កសិកម្ម និងពាណិជ្ជកម្មតូចៗ។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="d">ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/archtb.jpg" alt="">
+                    <span><p align="justify">ខេត្តត្បូងឃ្មុំមានស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗជាច្រើន ដែលបង្ហាញពីទ្រព្យសម្បត្តិបែបប្រពៃណី និងការអភិវឌ្ឍសម័យទំនើប។ វត្តអារាម និងព្រះវិហារជាច្រើននៅតាមស្រុកនានា គឺជាកន្លែងបង្ហាញពីសិល្បៈនិងស្ថាបត្យកម្មបុរាណខ្មែរ ដែលមានការរចនាល្អប្រណិត និងមានតម្លៃសាសនា។ ព្រមទាំងមានវិមានឯករាជ្យត្បូងឃ្មុំ ដែលជារូបសំណង់មានសារៈសំខាន់ក្នុងការរំលឹកឯករាជ្យជាតិ និងជាទីកន្លែងប្រមូលផ្តុំពិធីជាតិជានិច្ច។
+
+ក្រៅពីនេះ សាលាខេត្ត និងអគាររដ្ឋបាលផ្សេងៗត្រូវបានកសាងឡើងដោយរចនាបែបទំនើប ដើម្បីបម្រើការគ្រប់គ្រង និងផ្តល់សេវាដល់ប្រជាពលរដ្ឋ។ ផ្សារកណ្តាល និងអគារពាណិជ្ជកម្មក៏ជាសំណង់សំខាន់ ដែលជាគន្លងទំនាក់ទំនងពាណិជ្ជកម្ម និងជីវភាពប្រជាជន។ ខេត្តក៏មានសារមន្ទីរ និងវិមានអនុស្សាវរីយ៍មួយចំនួន ដើម្បីអនុស្សាវរីយ៍ដល់ប្រវត្តិសាស្ត្រ និងវីរបុរសជាតិ។
+
+ដោយសារការរួមបញ្ចូលរវាងសំណង់ប្រពៃណី និងអគារទំនើប ទេសភាពស្ថាបត្យកម្មនៅត្បូងឃ្មុំក្លាយជាកត្តាដែលបន្ថែមភាពទាក់ទាញទេសចរណ៍ និងបង្ហាញពីអត្តសញ្ញាណវប្បធម៌ជាតិ។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="e">ការអប់រំ និងស្ថាប័នសិក្សា</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ការអប់រំក្នុងខេត្តត្បូងឃ្មុំកំពុងរីកចម្រើនជាបន្តបន្ទាប់ ដោយមានសាលាបឋមសិក្សា អនុវិទ្យាល័យ និងវិទ្យាល័យសម្រាប់កុមារ និងយុវជន។ ក្រៅពីនេះ ក៏មានមជ្ឈមណ្ឌលបណ្តុះបណ្តាលបច្ចេកទេស និងសាកលវិទ្យាល័យមួយចំនួន ដែលផ្តល់ឱកាសសិក្សាថ្នាក់ខ្ពស់ជិតស្រុក។ រដ្ឋាភិបាល និងអង្គការផ្សេងៗក៏បានគាំទ្រដោយផ្តល់អាហារូបករណ៍ និងសម្ភារៈសិក្សា ដើម្បីលើកស្ទួយគុណភាពអប់រំ និងជួយសិស្សក្រីក្រ។</p></span>
+                    <img src="./img/sttb.jpeg" alt="">
+                </div>
+
+            </div>
+         </div>
+           <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="f">សេដ្ឋកិច្ច</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">សេដ្ឋកិច្ចខេត្តត្បូងឃ្មុំផ្អែកលើ កសិកម្មជាចម្បង ដូចជា ការដាំស្រូវ កសិផលផ្សេងៗ និងកសិកម្មឧស្សាហកម្ម។ ផលិតផលកសិកម្មត្រូវបានដឹកជញ្ជូនទៅទីផ្សារខេត្តជិតខាង និងរាជធានីភ្នំពេញ។ ជាមួយនឹងទីតាំងជាប់ព្រំប្រទល់វៀតណាម ពាណិជ្ជកម្មតាមព្រំដែនក៏មានសារៈសំខាន់ក្នុងការលូតលាស់សេដ្ឋកិច្ច។ ការវិនិយោគក្នុងវិស័យសេវាកម្ម និងពាណិជ្ជកម្មក៏កំពុងតែបន្ថែម ដើម្បីបង្កើនចំណូល និងបង្កើតកន្លែងការងារថ្មីៗសម្រាប់ប្រជាពលរដ្ឋ។</p></span>
+                    <img src="./img/ecotb.png" alt="">
+                </div>
+
+            </div>
+         </div>
+          <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="g">ទេសចរណ៍</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/ttb.jpg" alt="">
+                    <span><p align="justify">ខេត្តត្បូងឃ្មុំមានទេសភាពធម្មជាតិស្រស់ស្អាត និងវត្តអារាមច្រើន ដែលទាក់ទាញភ្ញៀវទេសចរពីក្នុងនិងក្រៅប្រទេស។ ទេសចរណ៍នៅទីនេះផ្តោតលើទន្លេតូចៗ ព្រៃឈើ និងវត្តបុរាណ ដែលអាចស្វែងយល់ពីប្រវត្តិសាស្ត្រ និងវប្បធម៌ខ្មែរ។ ការអភិវឌ្ឍទីតាំងទេសចរណ៍ និងមូលដ្ឋានសេវាកម្មសម្រាប់ភ្ញៀវកំពុងតែរីកចម្រើន ដើម្បីបង្កើនចំណូលសហគមន៍ និងលើកស្ទួយសេដ្ឋកិច្ចតំបន់។</p></span>
+                </div>
+
+            </div>
+        </div>
+          <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="h">ការអភិវឌ្ឍនាអនាគត</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">អនាគតខេត្តត្បូងឃ្មុំផ្តោតលើការអភិវឌ្ឍ កសិកម្មទំនើប ពាណិជ្ជកម្មព្រំដែន និងទេសចរណ៍។ រដ្ឋាភិបាលមានផែនការកែលម្អហេដ្ឋារចនាសម្ព័ន្ធ ដូចជា ផ្លូវ ស្ពាន និងបណ្តាលអគ្គិសនី និងទឹកស្អាត ដើម្បីជួយលើកស្ទួយជីវភាពប្រជាពលរដ្ឋ។ ការរក្សាភាពបរិសុទ្ធធម្មជាតិនិងវប្បធម៌ប្រពៃណីក៏ត្រូវបានផ្តល់អាទិភាព ដើម្បីទាក់ទាញទេសចរ និងបង្កើនសក្តានុពលសេដ្ឋកិច្ចក្នុងអនាគត។</p></span>
+                    <img src="./img/dtb.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+
+        
+</body>
+</html>

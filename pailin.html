@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pailin</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* scroll-behavior: smooth; */
+    }
+    html,body{
+      scroll-behavior: smooth;
+    }
+    body {
+      width: 100%;
+      margin-bottom: 50px;
+      height: auto;
+      
+      background-image: url(./img/—Pngtree—kbach\ khmer-pattern\ cambodia_1293616.jpg);
+      background-repeat: no-repeat;
+    
+     background-size: cover;
+        
+    }
+    .info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+     & img{
+      width: 50px;
+      margin-left: 20px;
+      object-fit: cover;
+     }
+     & p{
+      place-content: center;
+      margin-top: 15px;
+      font-family: Kh Ang PhkayProek;
+      font-size: 20px;
+     }
+      & a{
+        color: bisque;
+        text-decoration: none;
+      }
+
+
+   }
+   .text {
+     
+      background-color: rgba(255, 255, 255, 0.245);
+      width: 920px;
+      height: 150px;
+      
+      border-radius: 30px;
+      border: solid 3px rgb(228, 6, 6);
+      
+      margin-top: 20px;
+      & .pro {
+       place-content: center;
+      
+      padding-top: 35px;
+      
+       & a{
+        margin-left: 10px;
+        color: rgb(16, 4, 4);
+        font-size: 20px;
+        font-family: Kh Baphnom SnehRean;
+        
+       }
+      }
+    }
+     .BAR{
+            width: 100%;
+           
+            font-size: 20px;
+            font-family: Kh Ang Samnadaichas;
+            color: white;
+            & marquee{
+              position: fixed;
+              bottom: 0;
+            }
+        }
+    .welcome{
+        width: 100%;
+        height: 500px;
+        
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        place-items: center;
+            & p{
+                text-align: center;
+                font-size: 65px;
+                font-family: Khmer HUYSAVY R;
+                color: rgb(36, 77, 189);
+            }
+       
+         & .namepro{
+            width: auto;
+            height: auto;
+            
+        }
+        & img{
+           width: 450px;
+           height: 450px;
+           object-fit: cover;
+           margin-left: 20%;
+           border-radius: 20px 50px;
+           border: solid 2px white;
+           box-shadow: rgba(204, 198, 198, 0.25) 0px 14px 28px, rgba(228, 221, 221, 0.22) 0px 10px 10px;
+        }
+    }
+    .indro{
+        width: auto;
+        height: auto;
+        
+        & p{
+            width: 800px;
+            place-content: center;
+            border-radius: 50px 50px 0px 0px;
+            height: 100px;
+            background-color: rgb(70, 15, 5);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:AKbalthom Kbach ;
+            box-shadow: rgba(230, 225, 225, 0.19) 0px 10px 20px, rgba(234, 232, 232, 0.23) 0px 6px 6px;
+        }
+    }
+    .info1{
+        width: auto;
+        height: auto;
+           
+        
+        & .list{
+            width: 800px;
+            
+           
+            height: 550px;
+            background-color: rgba(137, 43, 226, 0.37);
+            font-size: 30px;
+            color: rgb(173, 173, 210);
+            font-family:Kh OreangOv Thmey;
+             border-radius: 0px 0px 50px 50px;
+             box-shadow: rgba(239, 234, 234, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+             & a{
+                color: beige;
+                text-decoration: none;
+             }
+        }
+    }
+    .explain{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(250, 235, 215, 0.384);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex2{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                        
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-right: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex1{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(212, 140, 16);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+     .explain1{
+        width: 100%;
+        height: 100%;
+         
+        display: flex;
+        justify-content: center;
+          
+        & .ex1{
+            margin-top: 50px;
+            width: 90%;
+            height: 400px;
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.312);
+             border-bottom-left-radius: 20px;
+             border-bottom-right-radius: 20px;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                & .ex22{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    place-items: center;
+                    gap: 10px;
+                     & img{
+                        width: 350px;
+                        height: 250px;
+                       
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        border-radius: 30px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                     }
+                     & p{
+                        padding-left: 10px;
+                        font-size: 20px;
+                        font-family: Koulen;
+                     }
+                }
+          
+                & img{
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                    
+                    
+
+
+                }
+          
+           
+        
+                & .ex12{
+                    display: flex;
+                    justify-content: space-around;
+                    place-items: center;
+                    border-radius: 50px 50px 0px 0px;
+                     width: 100%;
+                     height: 100px;
+                     background-color: rgb(223, 15, 15);
+                     & p{
+                        font-size: 35px;
+                        color: white;
+                        font-family:Kh OreangOv Thmey ;
+                     }
+
+                }
+        }
+
+    }
+    .top{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      & img{
+        width: 70px;
+        margin-bottom: 30px;
+      }
+    }
+</style>
+<body>
+    <div class="top">
+     <a href="#"><img src="./img/top.png" alt="">
+    </div>
+     <div class="BAR">
+      <marquee bgcolor="red" 
+      onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">និស្សិតឈ្មោះ: លី សីហៈ ក្រុម SW34 ជំនាន់ទី 23 ឆ្នាំទី 1 ឆមាសទី 2 មុខវិជ្ជា WD I បង្រៀនដោយ លោកគ្រូ រី វិសាន  នៃ វិទ្យាស្ថានស៊ីតិក || Project Map</marquee>
+
+    </div>
+     </center>
+    
+      <div class="info">
+        
+
+         <a href="./home.html"><img id="home" src="./img/12249422.png" alt=""></a> 
+          <a href="./home.html"><p>ទំព័រដើម</p></a>
+         <a href="./contact.html"><img id="ct" src="./img/3237155-200.png" alt=""></a> 
+          <a href="./contact.html"><p>ទំនាក់ទំនង</p></a>
+      </div>
+    
+    <center>
+
+        <div class="text">
+          <div class="pro">
+            <center>
+    
+                <a href="./phnompenh.html">រាជធានីភ្នំពេញ</a>
+                <a href="./kampot.html">កំពត</a>
+                <a href="./kep.html">កែប</a>
+                <a href="./kampongchnang.html">កំពង់ឆ្នាំង</a>
+                <a href="./pursat.html">ពោធិ៍សាត់</a>
+                <a href="./battambong.html">បាត់ដំបង់</a>
+                <a href="./pailin.html">ប៉ៃលិន</a>
+                <a href="./banteay meanchey.html">បន្ទាយមានជ័យ</a>
+                <a href="./siemreap.html">សៀមរាប</a>
+                <a href="./kampong Thom.html">កំពង់ធំ</a>
+                <a href="./kampongcham.html">កំពង់ចាម</a>
+                <a href="./preyveng.html">ព្រៃវែង</a>
+                <a href="./svay rieng.html">ស្វាយរៀង</a>
+                <a href="./takeo.html">តាកែវ</a>
+                <a href="./kandal.html">កណ្តាល</a>
+                <a href="./kampongspeu.html">កំពង់ស្ពឺ</a>
+                <a href="./kratie.html">ក្រចេះ</a>
+                <a href="./stung treng.html">ស្ទឹងត្រែង</a>
+                <a href="./mondulkiri.html">មណ្ឌលគីរី</a>
+                <a href="./preah vihear.html">ព្រះវិហារ</a>
+                <a href="./ratanakiri.html">រតនៈគីរី</a>
+                <a href="./koh kong.html">កោះកុង</a>
+                <a href="./oddar meanchey.html">ឧត្តរមានជ័យ</a>
+                <a href="./tbong khmum.html">ត្បូងឃ្មុំ</a>
+                <a href="./sihanoukvill.html">ព្រះសីហនុ</a>
+                
+                
+            </center>
+          </div>
+          
+          
+        </div>
+    </center>
+    
+
+        <div class="welcome">
+            <p>សូមស្វាគមន៍មកកកាន់<br>ខេត្តប៉ៃលិន</p>
+            <div class="nampro">
+                
+                <img src="./img/pailin.jpg" alt="">
+            </div>
+        </div>
+        <center>
+            <div class="indro">
+                <p>ខាងក្រោមនេះអ្នកនឹងអាចយល់ដឹងអំពីព័ត៌មានក្នុងខេត្តប៉ៃលិន</p>
+            </div>
+        </center>
+        <center>
+
+            <div class="info1">
+                 
+               <div class="list">
+                    <span style="font-family: Khmer HUYSAVY R;color: white;"><p id="meteka" ><u>មាតិការ</u></p></span>
+                    <a href="#a"><p>១.ប្រវតិ្តខេត្តប៉ៃលិន........................................................................................។</p></a>
+                    <a href="#b"><p>២.ទីតាំងភូមិសាស្ត្រ.........................................................................................។</p></a>
+                    <a href="#c"><p>៣.ប្រជាជន និងវប្បធម៌..................................................................................។</p></a>
+                    <a href="#d"><p>៤.ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ................................................................។</p></a>
+                    <a href="#e"><p>៥.ការអប់រំ និងស្ថាប័នសិក្សា...........................................................................។</p></a>
+                    <a href="#f"><p>៦.សេដ្ឋកិច្ច........................................................................................................។</p></a>
+                    <a href="#g"><p>៧.ទេសចរណ៍...................................................................................................។</p></a>
+                    <a href="#h"><p>៨.ការអភិវឌ្ឍនាអនាគត..................................................................................។</p></a>
+               </div>
+                
+            </div>
+            
+        </center>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="a">ប្រវតិ្តខេត្តប៉ៃលិន</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/hpl.jpg" alt="">
+                    <span><p align="justify">ខេត្ត ប៉ៃលិន ជាខេត្តមួយស្ថិតនៅភាគពាក់កណ្ដាល-ខាងលិចនៃប្រទេសកម្ពុជា មានប្រវត្តិសាស្ត្រចាស់ទាំងពីសម័យស្រុកបុរាណ និងអាណានិគមបារាំង។ ខេត្តនេះត្រូវបានបង្កើតជាខេត្តផ្លូវការនៅឆ្នាំ ១៩៨៥ ដោយកម្រិតការដ្ឋានរដ្ឋាភិបាលបន្ទាប់ពីសម័យសង្គ្រាម។ ប៉ៃលិនត្រូវបានគេចាត់ទុកថាជាតំបន់សំខាន់សម្រាប់ កសិកម្ម និង ពាណិជ្ជកម្មតាមព្រំដែន ដោយមានទីតាំងជិតប្រទេសថៃ។ ប្រវត្តិសាស្ត្រប៉ៃលិនក៏ទាក់ទងជាមួយសង្គ្រាម និងការរីកចម្រើនក្រោយសង្គ្រាម ដែលបានធ្វើឲ្យខេត្តក្លាយជាតំបន់មានសក្តានុពលសម្រាប់អភិវឌ្ឍសេដ្ឋកិច្ច និងទេសចរណ៍ក្នុងអនាគត។</p></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="b">ទីតាំងភូមិសាស្ត្រ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត ប៉ៃលិន ស្ថិតនៅភាគលិចនៃប្រទេសកម្ពុជា មានព្រំប្រទល់ជាប់ប្រទេស ថៃ ខាងលិច។ ខេត្តនេះមានទីតាំងភូមិសាស្ត្រដែលប្រកបដោយភ្នំ, ទន្លេ និងព្រៃធំធេង។ ភាគខាងជើងនិងភាគខាងកើតជាប់ខេត្ត កំពង់ស្ពឺ និង កណ្ដាល, ខាងត្បូងជាប់ខេត្ត សៀមរាប និង ពោធិ៍សាត់។ ទីតាំងប៉ៃលិនដែលស្ងប់ស្ងាត់ និងស្រស់ស្អាតធ្វើឲ្យខេត្តមានសក្តានុពលក្នុងការអភិវឌ្ឍទេសចរណ៍ និងកសិកម្មស្រែធំៗ។ កោះតូចៗ និងទន្លេដ៏ស្រស់ស្អាតជាច្រើននៅក្នុងខេត្តក៏ជាគន្លងទាក់ទាញភ្ញៀវទេសចរផងដែរ។</p></span>
+                    <img src="./img/mappl.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="c">ប្រជាជន និងវប្បធម៌</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/pppl.jpg" alt="">
+                    <span><p align="justify">ខេត្ត ប៉ៃលិន មានប្រជាជនប្រមាណ ៥០,០០០–៧០,០០០នាក់ ភាគច្រើនជាជនជាតិខ្មែរ និងជាពុទ្ធសាសនិក។ ក៏មានសហគមន៍ជនជាតិភាគតិច ដូចជា ចិន, វៀតណាម និងជនជាតិដើមខេត្តផ្សេងៗ។ វប្បធម៌ប៉ៃលិនផ្អែកលើប្រពៃណីជីវិតជនបទ ដូចជា ការធ្វើស្រែ, ការនេសាទ, និងសិល្បៈប្រពៃណីខ្មែរ។ ពិធីបុណ្យប្រពៃណីដូចជា បុណ្យចូលឆ្នាំខ្មែរ និង បុណ្យភ្ជុំបិណ្ឌ តែងតែអញ្ជើញប្រជាពលរដ្ឋ និងភ្ញៀវទេសចរចូលរួមយ៉ាងសប្បាយរីករាយ។ ក្រៅពីនេះ ខេត្តប៉ៃលិនក៏ល្បីលើអាហារប្រពៃណី និងផលិតផលស្រុក ដូចជា ផ្លែឈើ និងត្រីទន្លេ។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="d">ស្ថាបត្យកម្ម និងសំណង់សំខាន់ៗ</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/archpl.webp" alt="">
+                    <span><p align="justify">ខេត្ត ប៉ៃលិន មានស្ថាបត្យកម្មដែលផ្តោតលើប្រពៃណីខ្មែរ និងការរួមបញ្ចូលបែបបារាំងនៅសម័យអាណានិគម។ នៅក្នុងខេត្ត អ្នកអាចឃើញ វត្តបុរាណ និង ប្រាសាទតូចៗ ដែលត្រូវបានគេចាត់ទុកជាកន្លែងសក្ការបូជាសំខាន់ៗសម្រាប់ប្រជាជន។ ទេសចរណ៍ក៏អាចទស្សនាសំណង់រដ្ឋបាលបុរាណ និងផ្ទះល្វែងបែបបារាំងនៅទីក្រុងប៉ៃលិន។ កោះតូចៗ និងសណ្ឋាគារតាមឆ្នេរទន្លេក៏ជាសំណង់សំខាន់សម្រាប់ទេសចរណ៍ និងការកម្សាន្ត។ ស្ថាបត្យកម្ម និងសំណង់ទាំងនេះបង្ហាញពីការលាយបញ្ចូលអត្តសញ្ញាណវប្បធម៌ខ្មែរ និងឥទ្ធិពលបរទេសដែលនៅសល់ពីសម័យកន្លងមក។</p></span>
+                </div>
+
+            </div>
+        </div>
+         <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="e">ការអប់រំ និងស្ថាប័នសិក្សា</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត ប៉ៃលិន មានប្រព័ន្ធអប់រំចាប់ពីកម្រិតបឋមសិក្សា រហូតដល់វិទ្យាល័យ និងមជ្ឈមណ្ឌលបណ្តុះបណ្តាលវិជ្ជាជីវៈ។ សាលារៀនសាធារណៈ និងឯកជនក្នុងខេត្តផ្តល់ឱកាសសិក្សារសម្រាប់កុមារ និងយុវជនទាំងក្នុងទីក្រុង និងតំបន់ជនបទ។ ការអប់រំផ្តោតលើវិជ្ជាជីវៈ កសិកម្ម និងជំនាញសម្រាប់ការងារ ដើម្បីឆ្លើយតបទៅតាមតម្រូវការការងារ និងសេដ្ឋកិច្ចក្នុងតំបន់។ ក៏មានសាខាសាកលវិទ្យាល័យ ឬវិទ្យាស្ថានឯកជនខ្លះ ដែលផ្តល់ជំនាញទាន់សម័យ និងសមត្ថភាពវិជ្ជាជីវៈ។ ការអប់រំនេះទទួលបានការគាំទ្រពីអង្គការមូលនិធិ និង NGOs ដើម្បីធានាឱ្យយុវជនមានឱកាសសិក្សាទាំងស្មើស្មើ។</p></span>
+                    <img src="./img/stpl.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+           <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="f">សេដ្ឋកិច្ច</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">សេដ្ឋកិច្ចខេត្ត ប៉ៃលិន មានមូលដ្ឋានលើ កសិកម្ម, នេសាទ, និង ពាណិជ្ជកម្មព្រំដែន។ កសិកម្មផ្តោតលើការដាំ ស្រូវ, សណ្តែក, បន្លែ, និងផ្លែឈើ ដើម្បីផ្គត់ផ្គង់ទីផ្សារក្រោម និងនាំចេញក្រៅប្រទេស។ ទេសចរណ៍ក៏ជាផ្នែកសំខាន់ក្នុងសេដ្ឋកិច្ច ដោយមានឆ្នេរស្អាត, ទន្លេស្អាត និងកោះតូចៗ ដែលទាក់ទាញភ្ញៀវទេសចរពីក្នុងប្រទេស និងក្រៅប្រទេស។ ការវិនិយោគពីឯកជន និងបរទេសក៏ជួយជំរុញការរីកចម្រើននៃវិស័យសេវាកម្ម និងសណ្ឋាគារ។ ភាគច្រើននៃប្រជាជនក្នុងខេត្តពឹងផ្អែកលើកសិកម្ម និងទេសចរណ៍សម្រាប់ចំណូលប្រចាំថ្ងៃ។</p></span>
+                    <img src="./img/ecopl.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+          <div class="explain">
+
+            <div class="ex">
+               
+                <div class="ex1">
+                    <p id="g">ទេសចរណ៍</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex2">
+
+                    <img src="./img/tpl.jpg" alt="">
+                    <span><p align="justify">ខេត្ត ប៉ៃលិន មានទេសភាពធម្មជាតិស្រស់ស្អាត និងកន្លែងទាក់ទាញភ្ញៀវទេសចរជាច្រើន។ ឆ្នេរទន្លេ និងទឹកជ្រោះតូចៗ ផ្តល់ឱកាសសម្រាប់ទេសចរណ៍ទូក, កម្សាន្តទឹក និងសកម្មភាពធម្មជាតិផ្សេងៗ។ ក៏មាន កោះតូចៗ និងទីតាំងសម្រាប់ស្នាក់នៅសណ្ឋាគារបែបឯកជន ដែលទាក់ទាញភ្ញៀវស្រមោលចូលក្នុងស្រុកស្ងប់ស្ងាត់។ ពិធីបុណ្យប្រពៃណី និងអាហារប្រពៃណីក៏ជាគន្លងទាក់ទាញភ្ញៀវទេសចរដើម្បីស្វែងយល់ពីវប្បធម៌ និងជីវភាពប្រជាជនក្នុងតំបន់។ ទេសចរណ៍ប៉ៃលិនក៏ជួយផ្គត់ផ្គង់ចំណូលសម្រាប់ប្រជាជនក្នុងខេត្ត និងជំរុញអភិវឌ្ឍសេដ្ឋកិច្ចស្រុក។</p></span>
+                </div>
+
+            </div>
+        </div>
+          <div class="explain1">
+
+            <div class="ex1">
+               
+                <div class="ex12">
+                    <p id="h">ការអភិវឌ្ឍនាអនាគត</p>
+                    <span style="font-family: Khmer HUYSAVY R ; font-size: 35px; "><a style="color: white; text-decoration: none;" href="#meteka">មាតិកា</a></span>
+
+                </div>
+                <div class="ex22">
+
+                    <span><p align="justify">ខេត្ត ប៉ៃលិន មានផែនការអភិវឌ្ឍអនាគតដែលផ្តោតលើ កសិកម្មទំនើប, ទេសចរណ៍បៃតង, និង ហេដ្ឋារចនាសម្ព័ន្ធទំនើប។ រដ្ឋាភិបាលមានគម្រោងកែលម្អផ្លូវជាតិ និងបណ្ដាញចរាចរណ៍ ដើម្បីភ្ជាប់ទីក្រុងនិងស្រុកជិតខាង, ជំរុញពាណិជ្ជកម្ម និងដឹកជញ្ជូនទំនិញ។ ការអភិវឌ្ឍទេសចរណ៍ផ្តោតលើការពារបរិស្ថាន និងធម្មជាតិ ដើម្បីរក្សាទេសភាពឆ្នេរ, ទន្លេ និងភ្នំជាស្អាត។ ការវិនិយោគពីឯកជន និងបរទេសក៏នាំឱកាសកាន់តែច្រើនក្នុងវិស័យសេវាកម្ម និងសណ្ឋាគារ។ ទិសដៅអនាគតនៃប៉ៃលិន គឺក្លាយជាតំបន់អភិវឌ្ឍសេដ្ឋកិច្ច និងទេសចរណ៍ប្រកបដោយចម្រុះ និងស្ថាពរ។</p></span>
+                    <img src="./img/dpl.jpg" alt="">
+                </div>
+
+            </div>
+         </div>
+
+        
+</body>
+</html>
